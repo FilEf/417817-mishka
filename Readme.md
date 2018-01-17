@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Филипп Ефимов](https://up.htmlacademy.ru/adaptive/13/user/417817).
-* Наставник: `Неизвестно`.
+* Наставник: `Дмитрий Казанцев`.
 
 ---
 
