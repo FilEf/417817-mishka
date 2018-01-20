@@ -136,7 +136,7 @@
     <div class="modal">
       <span class="modal__title">Добавить в корзину</span>
       <span class="modal__sub-title">Выберите размер:</span>
-      <div class="modal__input">
+      <form class="modal__input">
         <ul class="modal__sizes">
           <li class="modal__size-item modal__size-item--s">
             <input type="radio" name=size value="s" id="size-s" checked>
@@ -151,8 +151,8 @@
             <label for="size-l">L</label>
           </li>
         </ul>
-      </div>
-      <button class="modal__add btn-green" type="submit">Добавить</button>
+        <button class="modal__add btn-green" type="submit" formmethod="post" formaction="https://echo.htmlacademy.ru" formtarget="_blank">Добавить</button>
+      </form>
     </div>
 
   </body>
