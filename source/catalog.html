@@ -42,7 +42,7 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title"></h1>
+      <h1 class="page-main__title">Каталог товаров</h1>
       <div class="catalog">
         <section class="catalog__item catalog__item--rabbit">
           <a class="catalog__img" href="#"></a>
@@ -101,6 +101,28 @@
         <a class="social__designed" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       </section>
     </footer>
+
+    <div class="modal">
+      <span class="modal__title">Добавить в корзину</span>
+      <span class="modal__sub-title">Выберите размер:</span>
+      <div class="modal__input">
+        <ul class="modal__sizes">
+          <li class="modal__size-item modal__size-item--s">
+            <input type="radio" name=size value="s" id="size-s" checked>
+            <label for="size-s">S</label>
+          </li>
+          <li class="modal__size-item modal__size-item--m">
+            <input type="radio" name=size value="m" id="size-m">
+            <label for="size-m">M</label>
+          </li>
+          <li class="modal__size-item modal__size-item--l">
+            <input type="radio" name=size value="l" id="size-l">
+            <label for="size-l">L</label>
+          </li>
+        </ul>
+      </div>
+      <button class="btn btn--green" type="submit">Добавить</button>
+    </div>
 
   </body>
 </html>
