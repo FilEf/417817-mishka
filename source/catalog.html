@@ -6,77 +6,76 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="#" width="86" height="35" alt="Мишка">
-      </a>
+      <div class="logo">
+        <a class="logo__link"  href="index.html">
+          <img class="logo__img" src="#" width="86" height="35" alt="Мишка">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav_wrapper">
-          <ul class="main-nav__list upper-list">
-            <li class="upper-list__item">
-              <a>Каталог товаров</a>
+          <ul class="main-nav__list main-nav__list--upper">
+            <li class="main-nav__item">
+              <a class="main-nav__name">Каталог товаров</a>
             </li>
-            <li class="upper-list__item">
-              <a href="#">Вязание на заказ</a>
+            <li class="main-nav__item">
+              <a class="main-nav__name" href="#">Вязание на заказ</a>
             </li>
-            <li class="upper-list__item">
-              <a href="#">Поиск по сайту</a>
+            <li class="main-nav__item">
+              <a class="main-nav__name" href="#">Поиск по сайту</a>
             </li>
-            <li class="upper-list__item">
-              <a href="#">Корзина</a>
+            <li class="main-nav__item">
+              <a class="main-nav__name" href="#">Корзина</a>
             </li>
           </ul>
-          <ul class="main-nav__list lower-list">
-            <li class="lower-list__item">
-              <a href="#">Новые поступления</a>
+          <ul class="main-nav__list main-nav__list--lower">
+            <li class="main-nav__item">
+              <a class="main-nav__name" href="#">Новые поступления</a>
             </li>
-            <li class="lower-list__item">
-              <a href="#">Распродажа</a>
-            </li>
-            <li class="lower-list__item">
-              <a href="#">Бесплатная доставка по России</a>
+            <li class="main-nav__item">
+              <a class="main-nav__name" href="#">Распродажа</a>
             </li>
           </ul>
         </div>
       </nav>
+      <span class="page-header__add-info">Бесплатная доставка по России</span>
     </header>
 
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
       <div class="catalog">
-        <section class="catalog__item catalog__item--rabbit">
-          <a class="catalog__img" href="#"></a>
+        <section class="catalog__item">
+          <a class="catalog__link-wrapper" href="#">
+            <img class="catalog__img" src="#" alt="Зайчик-попрыгайчик" width="260" height="195">
+            <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
+          </a>
           <div class="catalog__description">
-            <ul class="class__description-list">
-              <li class="catalog__name"><a href="#">Зайчик-попрыгайчик</a></li>
-              <li class="catalog__specs">Рост 30 см, вес 200 г</li>
-              <li class="catalog__price">1 200 руб.</li>
-            </ul>
+              <span class="catalog__specs">Рост 30 см, вес 200 г</span>
+              <span class="catalog__price">1 200 руб.</span>
           </div>
         </section>
 
-        <section class="catalog__item catalog__item--small-basket">
-          <a class="catalog__img" href="#"></a>
+        <section class="catalog__item">
+          <a class="catalog__link-wrapper" href="#">
+            <img class="catalog__img" src="#" alt="Корзинка для белья" width="260" height="195">
+            <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
+          </a>
           <div class="catalog__description">
-            <ul class="class__description-list">
-              <li class="catalog__name"><a href="#">Корзинка для белья</a></li>
-              <li class="catalog__specs">Диаметр 15 см, высота 10 см</li>
-              <li class="catalog__price">690 руб.</li>
-            </ul>
+            <span class="catalog__specs">Диаметр 15 см, высота 10 см</span>
+            <span class="catalog__price">690 руб.</span>
           </div>
         </section>
 
-        <section class="catalog__item catalog__item--big-basket">
-          <a class="catalog__img" href="#"></a>
+        <section class="catalog__item">
+          <a class="catalog__link-wrapper" href="#">
+            <img class="catalog__img" src="#" alt="Большая корзинка для игрушек" width="260" height="195">
+            <h2 class="catalog__title">Большая корзинка для игрушек</h2>
+          </a>
           <div class="catalog__description">
-            <ul class="class__description-list">
-              <li class="catalog__name"><a href="#">Большая корзинка для игрушек</a></li>
-              <li class="catalog__specs">Диаметр 30 см, высотка 30 см</li>
-              <li class="catalog__price">1500 руб.</li>
-            </ul>
+            <span class="catalog__specs">Диаметр 30 см, высотка 30 см</span>
+            <span class="catalog__price">1500 руб.</span>
           </div>
         </section>
-      </div>
 
       <section class="work-process">
         <span class="work-process__title">Процесс производства</span>
@@ -95,27 +94,29 @@
 
     <footer class="page-footer">
       <section class="social">
-        <a class="social__item social__item--inst" href="#">Instagram</a>
-        <a class="social__item social__item--fb" href="#">Facebook</a>
-        <a class="social__item social__item--twit" href="#">Twitter</a>
-        <a class="social__designed" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <ul class="social__list">
+          <li><a class="social__item social__item--inst" href="#">Instagram</a></li>
+          <li><a class="social__item social__item--fb" href="#">Facebook</a></li>
+          <li><a class="social__item social__item--twit" href="#">Twitter</a></li>
+        </ul>
       </section>
+      <a class="designed" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </footer>
 
     <div class="modal">
-      <span class="modal__title">Добавить в корзину</span>
-      <span class="modal__sub-title">Выберите размер:</span>
-      <form class="modal__input">
-        <ul class="modal__sizes">
-          <li class="modal__size-item modal__size-item--s">
+      <h1 class="modal__title">Добавить в корзину</h1>
+      <h2 class="modal__sub-title">Выберите размер:</h2>
+      <form class="modal__form">
+        <ul class="modal__list">
+          <li class="modal__size-item">
             <input type="radio" name=size value="s" id="size-s" checked>
             <label for="size-s">S</label>
           </li>
-          <li class="modal__size-item modal__size-item--m">
+          <li class="modal__size-item">
             <input type="radio" name=size value="m" id="size-m">
             <label for="size-m">M</label>
           </li>
-          <li class="modal__size-item modal__size-item--l">
+          <li class="modal__size-item">
             <input type="radio" name=size value="l" id="size-l">
             <label for="size-l">L</label>
           </li>
