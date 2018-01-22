@@ -38,7 +38,7 @@
           </ul>
         </div>
       </nav>
-      <span class="page-header__add-info">Бесплатная доставка по России</span>
+      <p class="page-header__add-info">Бесплатная доставка по России</p>
     </header>
 
     <main class="page-main">
@@ -47,38 +47,47 @@
         <section class="catalog__item">
           <a class="catalog__link-wrapper" href="#">
             <img class="catalog__img" src="#" alt="Зайчик-попрыгайчик" width="260" height="195">
+          </a>
+          <a class="catalog__link-wrapper" href="#">
             <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
           </a>
           <div class="catalog__description">
-              <span class="catalog__specs">Рост 30 см, вес 200 г</span>
-              <span class="catalog__price">1 200 руб.</span>
+              <p class="catalog__specs">Рост 30 см, вес 200 г</p>
+              <p class="catalog__price">1 200 руб.</p>
+              <a class="catalog__basket-icon" href="#">Добавить в корзину</a>
           </div>
         </section>
 
         <section class="catalog__item">
           <a class="catalog__link-wrapper" href="#">
             <img class="catalog__img" src="#" alt="Корзинка для белья" width="260" height="195">
+          </a>
+          <a class="catalog__link-wrapper" href="#">
             <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
           </a>
           <div class="catalog__description">
-            <span class="catalog__specs">Диаметр 15 см, высота 10 см</span>
-            <span class="catalog__price">690 руб.</span>
+            <p class="catalog__specs">Диаметр 15 см, высота 10 см</p>
+            <p class="catalog__price">690 руб.</p>
+            <a class="catalog__basket-icon" href="#">Добавить в корзину</a>
           </div>
         </section>
 
         <section class="catalog__item">
           <a class="catalog__link-wrapper" href="#">
             <img class="catalog__img" src="#" alt="Большая корзинка для игрушек" width="260" height="195">
+          </a>
+          <a class="catalog__link-wrapper" href="#">
             <h2 class="catalog__title">Большая корзинка для игрушек</h2>
           </a>
           <div class="catalog__description">
-            <span class="catalog__specs">Диаметр 30 см, высотка 30 см</span>
-            <span class="catalog__price">1500 руб.</span>
+            <p class="catalog__specs">Диаметр 30 см, высотка 30 см</p>
+            <p class="catalog__price">1500 руб.</p>
+            <a class="catalog__basket-icon" href="#">Добавить в корзину</a>
           </div>
         </section>
 
         <section class="work-process">
-          <span class="work-process__title">Процесс производства</span>
+          <p class="work-process__title">Процесс производства</p>
           <div class="work-process__img-video">
             <div class="work-process__img">
             <img src="#" width="260" height="150" alt="Процесс производства">
@@ -101,7 +110,11 @@
           <li><a class="social__item social__item--twit" href="#">Twitter</a></li>
         </ul>
       </section>
-      <a class="designed" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      <div class="designed">Разработано
+        <a class="designed__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="designed__hidden">HTML Academy</span>
+        </a>
+      </div>
     </footer>
 
     <div class="modal">
@@ -110,15 +123,15 @@
       <form class="modal__form">
         <ul class="modal__list">
           <li class="modal__size-item">
-            <input type="radio" name=size value="s" id="size-s" checked>
+            <input type="radio" name="size" value="s" id="size-s" checked>
             <label for="size-s">S</label>
           </li>
           <li class="modal__size-item">
-            <input type="radio" name=size value="m" id="size-m">
+            <input type="radio" name="size" value="m" id="size-m">
             <label for="size-m">M</label>
           </li>
           <li class="modal__size-item">
-            <input type="radio" name=size value="l" id="size-l">
+            <input type="radio" name="size" value="l" id="size-l">
             <label for="size-l">L</label>
           </li>
         </ul>

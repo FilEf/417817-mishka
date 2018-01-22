@@ -38,7 +38,7 @@
           </ul>
         </div>
       </nav>
-      <span class="page-header__add-info">Бесплатная доставка по России</span>
+      <p class="page-header__add-info">Бесплатная доставка по России</p>
     </header>
 
     <main class="page-main">
@@ -48,70 +48,70 @@
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Тип</legend>
           <div class="filter__input-wrapper">
-            <input class="filter_radio"  type="radio" name=type value="interior" id="interior-type" checked>
-            <label class="filter_label"  for="interior-type">Аксессуар для интерьера</label>
+            <input class="filter__radio"  type="radio" name="type" value="interior" id="interior-type" checked>
+            <label class="filter__label"  for="interior-type">Аксессуар для интерьера</label>
           </div>
           <div class="filter__input-wrapper">
-            <input class="filter_radio"  type="radio" name=type value="toy" id="toy-type">
-            <label class="filter_label"  for="toy-type">Детская игрушка</label>
+            <input class="filter__radio"  type="radio" name="type" value="toy" id="toy-type">
+            <label class="filter__label"  for="toy-type">Детская игрушка</label>
           </div>
         </fieldset>
 
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Цвет</legend>
           <div class="filter__input-wrapper">
-            <input class="filter_checkbox"  type="checkbox" name="w-clr" id="white-color" checked>
-            <label class="filter_label"  for="white-color">Белый</label>
+            <input class="filter__checkbox"  type="checkbox" name="w-clr" id="white-color" checked>
+            <label class="filter__label"  for="white-color">Белый</label>
           </div>
           <div class="filter__input-wrapper">
-            <input class="filter_checkbox"  type="checkbox" name="g-clr" id="grey-color" checked>
-            <label class="filter_label"  for="grey-color">Серый</label>
+            <input class="filter__checkbox"  type="checkbox" name="g-clr" id="grey-color" checked>
+            <label class="filter__label"  for="grey-color">Серый</label>
           </div>
           <div class="filter__input-wrapper">
-            <input class="filter_checkbox"  type="checkbox" name="tiff-clr" id="tiffany-color">
-            <label class="filter_label"  for="tiffany-color">«Тиффани»</label>
+            <input class="filter__checkbox"  type="checkbox" name="tiff-clr" id="tiffany-color">
+            <label class="filter__label"  for="tiffany-color">«Тиффани»</label>
           </div>
           <div class="filter__input-wrapper">
-            <input class="filter_checkbox"  type="checkbox" name="bl-clr" id="black-color">
-            <label class="filter_label"  for="black-color">Черный</label>
+            <input class="filter__checkbox"  type="checkbox" name="bl-clr" id="black-color">
+            <label class="filter__label"  for="black-color">Черный</label>
           </div>
           <div class="filter__input-wrapper">
-            <input class="filter_checkbox"  type="checkbox" name="pnk-clr" id="pink-color">
-            <label class="filter_label"  for="pink-color">Розовый</label>
+            <input class="filter__checkbox"  type="checkbox" name="pnk-clr" id="pink-color">
+            <label class="filter__label"  for="pink-color">Розовый</label>
           </div>
           <div class="filter__input-wrapper">
-            <input class="filter_checkbox"  type="checkbox" name="or-clr" id="orange-color">
-            <label class="filter_label"  for="orange-color">Оранжевый</label>
+            <input class="filter__checkbox"  type="checkbox" name="or-clr" id="orange-color">
+            <label class="filter__label"  for="orange-color">Оранжевый</label>
           </div>
         </fieldset>
 
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">ФИО</legend>
           <div class="filter__customer">
-            <label class="filter_label"  for="write-name">Имя:</label>
-            <input class="filter_text"  type="text" name="name" id="write-name" placeholder="Введите ваше имя*" required>
+            <label class="filter__label"  for="write-name">Имя:</label>
+            <input class="filter__text"  type="text" name="name" id="write-name" placeholder="Введите ваше имя*" required>
           </div>
           <div class="filter__customer">
-            <label class="filter_label"  for="write-last-name">Фамилия:</label>
-            <input class="filter_text"  type="text" name="last-name" id="write-last-name" placeholder="Укажите фамилию*" required>
+            <label class="filter__label"  for="write-last-name">Фамилия:</label>
+            <input class="filter__text"  type="text" name="last-name" id="write-last-name" placeholder="Укажите фамилию*" required>
           </div>
           <div class="filter__customer">
-            <label class="filter_label"  for="write-patronymic">Отчество:</label>
-            <input class="filter_text"  type="text" name="patronymic" id="write-patronymic" placeholder="Отчество, если желаете">
+            <label class="filter__label"  for="write-patronymic">Отчество:</label>
+            <input class="filter__text"  type="text" name="patronymic" id="write-patronymic" placeholder="Отчество, если желаете">
           </div>
         </fieldset>
 
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Тел</legend>
           <div class="filter__contacts">
-            <input class="filter_text"  type="text" name="phone" id="write-phone" placeholder="+7 XXX XX XX*" required>
+            <input class="filter__text"  type="text" name="phone" id="write-phone" placeholder="+7 XXX XX XX*" required>
           </div>
         </fieldset>
 
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">E-mail</legend>
           <div class="filter__contacts">
-            <input class="filter_text"  type="email" name="email" id="write-email" placeholder="Ваш Email*" required>
+            <input class="filter__text"  type="email" name="email" id="write-email" placeholder="Ваш Email*" required>
           </div>
         </fieldset>
 
@@ -134,7 +134,11 @@
           <li><a class="social__item social__item--twit" href="#">Twitter</a></li>
         </ul>
       </section>
-      <a class="designed" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      <div class="designed">Разработано
+        <a class="designed__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="designed__hidden">HTML Academy</span>
+        </a>
+      </div>
     </footer>
   </body>
 </html>

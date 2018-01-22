@@ -94,30 +94,31 @@
 
       <section class="opinions">
         <h2 class="opinions__title">Отзывы</h2>
-        <ul class="opinions__list">
-          <li class="opinions__item">
-            Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          </li>
-          <li class="opinions__item opinions__item--author-name">Анастасия Красильникова</li>
-          <li class="opinions__item">@misssssiskras</li>
-        </ul>
+        <div class="opinions__list">
+          <blockquote class="opinions__item">
+            <p class="opinions__text"> Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="opinions__author">Анастасия Красильникова</p>
+            <p class="opinions__email">@misssssiskras</p>
+          </blockquote>
+        </div>
         <div class="opinions__pagination opinions__slider">
           <button class="opinions__prev-item" type="submit" formmethod="post" formaction="https://echo.htmlacademy.ru">Предыдущий отзыв</button>
           <button class="opinions__next-item" type="submit" formmethod="post" formaction="https://echo.htmlacademy.ru">Следующий отзыв</button>
         </div>
         <a class="opinions__write btn" href="#">Написать</a>
-
-
-
       </section>
 
       <section class="contacts">
         <h3 class="contacts__title">Контакты</h3>
         <ul class="contacts__info">
-          <li class="contacts__item">e-mail:</li>
-          <li class="contacts__data contacts__data--email">info@mimimishkashop.ru</li>
-          <li class="contacts__item">адрес</li>
-          <li class="contacts__data">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</li>
+          <li class="contacts__item">
+            <p class="contacts__type">e-mail:</p>
+            <p class="contacts__data">info@mimimishkashop.ru</p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__type">адрес:</p>
+            <p class="contacts__data">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</p>
+          </li>
         </ul>
         <div class="contacts__maps">
           <div class="contacts__map-item">
@@ -137,7 +138,11 @@
           <li><a class="social__item social__item--twit" href="#">Twitter</a></li>
         </ul>
       </section>
-      <a class="designed" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      <div class="designed">Разработано
+        <a class="designed__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="designed__hidden">HTML Academy</span>
+        </a>
+      </div>
     </footer>
 
     <div class="modal">
@@ -146,15 +151,15 @@
       <form class="modal__form">
         <ul class="modal__list">
           <li class="modal__size-item">
-            <input type="radio" name=size value="s" id="size-s" checked>
+            <input type="radio" name="size" value="s" id="size-s" checked>
             <label for="size-s">S</label>
           </li>
           <li class="modal__size-item">
-            <input type="radio" name=size value="m" id="size-m">
+            <input type="radio" name="size" value="m" id="size-m">
             <label for="size-m">M</label>
           </li>
           <li class="modal__size-item">
-            <input type="radio" name=size value="l" id="size-l">
+            <input type="radio" name="size" value="l" id="size-l">
             <label for="size-l">L</label>
           </li>
         </ul>
