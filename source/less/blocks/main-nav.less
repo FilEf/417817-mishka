@@ -1,0 +1,38 @@
+@import "../mixins.less";
+@import "../general.less";
+
+.main-nav {
+  outline: 1px solid green;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.main-nav__list--upper {
+  .reset-list();
+  outline: 1px solid green;
+}
+
+.main-nav__list--lower {
+  .reset-list();
+  outline: 1px solid green;
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list--lower {
+    display: flex;
+  }
+}
+
+.main-nav__item {
+  padding: 33px 0;
+  text-align: center;
+  outline: 1px solid green;
+}
+
+.main-nav__name {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
