@@ -8,21 +8,23 @@
   </head>
   <body>
     <header class="page-header container">
-      <div class="logo">
-        <a class="logo__link">
-          <img class="logo__img" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-        </a>
-      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav_wrapper">
-          <ul class="main-nav__list main-nav__list--upper">
+        <div class="main-nav__wrapper">
+          <div class="logo">
+            <a class="logo__link">
+              <img class="logo__img" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+            </a>
+          </div>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list main-nav__list--services">
             <li class="main-nav__item">
               <a class="main-nav__name" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__name" href="#">Вязание на заказ</a>
             </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--sub-nav">
             <li class="main-nav__item">
               <a class="main-nav__name" href="#">Поиск по сайту</a>
             </li>
@@ -30,17 +32,17 @@
               <a class="main-nav__name" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-          <ul class="main-nav__list main-nav__list--lower">
-            <li class="main-nav__item">
+          <ul class="main-nav__list main-nav__list--news main-nav__list--desktop-only">
+            <li class="main-nav__item main-nav__item--desktop-only">
               <a class="main-nav__name" href="#">Новые поступления</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--desktop-only">
               <a class="main-nav__name" href="#">Распродажа</a>
             </li>
           </ul>
+          <p class="main-nav__add-info">Бесплатная доставка по России</p>
         </div>
       </nav>
-      <p class="page-header__add-info">Бесплатная доставка по России</p>
     </header>
 
     <main class="page-main container">

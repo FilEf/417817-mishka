@@ -1,8 +1,29 @@
 .logo {
-  border: 1px solid green;
+  outline: 1px solid green;
   height: 79px;
+  width: 320px;
 }
 
 .logo__img {
   padding: 22px 117px;
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    width: 318px;
+    height: 90px;
+    order: -2;
+  }
+  .logo__img {
+    padding: 22px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo {
+
+    height: 90px;
+    order: -1;
+    text-align: center;
+  }
 }
