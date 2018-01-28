@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Мишка: Каталог</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <div class="logo">
-        <a class="logo__link"  href="index.html">
-          <img class="logo__img" src="#" width="86" height="35" alt="Мишка">
+        <a class="logo__link" href="index.html">
+          <img class="logo__img" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
         </a>
       </div>
       <nav class="main-nav">
@@ -41,12 +43,12 @@
       <p class="page-header__add-info">Бесплатная доставка по России</p>
     </header>
 
-    <main class="page-main">
+    <main class="page-main container">
       <h1 class="page-main__title">Каталог товаров</h1>
       <div class="catalog">
         <section class="catalog__item">
           <a class="catalog__link-wrapper" href="#">
-            <img class="catalog__img" src="#" alt="Зайчик-попрыгайчик" width="260" height="195">
+            <img class="catalog__img" src="/img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
           </a>
           <a class="catalog__link-wrapper" href="#">
             <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
@@ -60,10 +62,10 @@
 
         <section class="catalog__item">
           <a class="catalog__link-wrapper" href="#">
-            <img class="catalog__img" src="#" alt="Корзинка для белья" width="260" height="195">
+            <img class="catalog__img" src="/img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
           </a>
           <a class="catalog__link-wrapper" href="#">
-            <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
+            <h2 class="catalog__title">Корзинка для белья</h2>
           </a>
           <div class="catalog__description">
             <p class="catalog__specs">Диаметр 15 см, высота 10 см</p>
@@ -74,7 +76,7 @@
 
         <section class="catalog__item">
           <a class="catalog__link-wrapper" href="#">
-            <img class="catalog__img" src="#" alt="Большая корзинка для игрушек" width="260" height="195">
+            <img class="catalog__img" src="/img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
           </a>
           <a class="catalog__link-wrapper" href="#">
             <h2 class="catalog__title">Большая корзинка для игрушек</h2>
@@ -90,10 +92,10 @@
           <p class="work-process__title">Процесс производства</p>
           <div class="work-process__img-video">
             <div class="work-process__img">
-            <img src="#" width="260" height="150" alt="Процесс производства">
+            <img src="/img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
             </div>
             <div class="work-process__video">
-              <video src="#"></video>
+              <video class="video__link" src="#" width="260" height="150"></video>
             </div>
           </div>
           <p class="work-process__text">По просьбам наших любимых фолловеров, мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -102,7 +104,7 @@
       </div>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <section class="social">
         <ul class="social__list">
           <li><a class="social__item social__item--inst" href="#">Instagram</a></li>
@@ -117,7 +119,7 @@
       </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal container">
       <h1 class="modal__title">Добавить в корзину</h1>
       <h2 class="modal__sub-title">Выберите размер:</h2>
       <form class="modal__form">
@@ -135,7 +137,7 @@
             <label for="size-l">L</label>
           </li>
         </ul>
-        <button class="modal__add btn-green" type="submit" formmethod="post" formaction="https://echo.htmlacademy.ru" formtarget="_blank">Добавить</button>
+        <button class="modal__add btn" type="submit" formmethod="post" formaction="https://echo.htmlacademy.ru" formtarget="_blank">Добавить</button>
       </form>
     </div>
 
