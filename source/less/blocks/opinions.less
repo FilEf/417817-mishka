@@ -56,3 +56,59 @@
   width: 130px;
   outline: 1px solid orange;
 }
+
+@media (min-width: @tablet-width) {
+  .opinions {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px 50px 53px 50px;
+    background: @color-light-grey url("../../../img/review@1x.jpg") no-repeat 0px;
+  }
+
+  .opinions__title {
+  font-size: 43px;
+  line-height: 50px;
+  font-weight: bold;
+  margin-bottom: 53px;
+  }
+
+  .opinions__write {
+    max-height: 50px;
+    padding-top: 12px;
+    order: 1;
+  }
+
+  .opinions__list {
+    order: 2;
+  }
+
+  .opinions__text {
+  margin: 0 0 59px 0;
+  font-size: 17px;
+  line-height: 30px;
+  }
+
+  .opinions__pagination {
+    position: absolute;
+    top: 352px;
+    right: 50px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .opinions {
+    padding: 70px 50px 102px 175px;
+  }
+
+  .opinions__pagination {
+    position: absolute;
+    top: 322px;
+    right: 50px;
+  }
+  .opinions__text {
+    max-width: 790px;
+  }
+}
