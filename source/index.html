@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Мишка: Главная страница</title>
   </head>
-  <body>
-    <header class="page-header container">
+  <body class="screen-width">
+    <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper container">
           <div class="logo">
             <a class="logo__link">
               <img class="logo__img" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
@@ -45,7 +45,7 @@
       </nav>
     </header>
 
-    <main class="page-main container">
+    <main class="page-main">
       <section class="good-sorts">
         <h1 class="good-sorts__title">Милые штуки ручной<p class="paragraph">работы для дома</p></h1>
         <ul class="good-sorts__list">
@@ -58,33 +58,37 @@
         </ul>
       </section>
 
-      <section class="random-status-product">
+      <section class="random-status-product container">
         <h2 class="random-status-product__name">Вязаные корзинки</h2>
         <h3 class="random-status-product__status">Товар недели</h3>
-        <p class="random-status-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
         <div class="random-status-product__specs">
-          <ul class="random-status-product__spec-list">
-            <li class="random-status-product__spec-item">
-              <span class="random-status-product__spec-name">Цвет:</span>
-              <span class="random-status-product__value">«Тиффани»/серый</span>
-            </li>
-            <li class="random-status-product__spec-item">
-              <span class="random-status-product__spec-name">Диаметр:</span>
-              <span class="random-status-product__value">25 см</span>
-            </li>
-            <li class="random-status-product__spec-item">
-              <span class="random-status-product__spec-name">Высота:</span>
-              <span class="random-status-product__spec-value">15 см</span>
-            </li>
-          </ul>
+          <div class="random-status-product__specs-wrapper">
+            <p class="random-status-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+            <ul class="random-status-product__spec-list">
+              <li class="random-status-product__spec-item">
+                <span class="random-status-product__spec-name">Цвет:</span>
+                <span class="random-status-product__value">«Тиффани»/серый</span>
+              </li>
+              <li class="random-status-product__spec-item">
+                <span class="random-status-product__spec-name">Диаметр:</span>
+                <span class="random-status-product__value">25 см</span>
+              </li>
+              <li class="random-status-product__spec-item">
+                <span class="random-status-product__spec-name">Высота:</span>
+                <span class="random-status-product__spec-value">15 см</span>
+              </li>
+            </ul>
+            <div class="random-status-product__order">
+              <p class="random-status-product__order-price">Цена: 990 руб</p>
+              <a class="random-status-product__make-order btn" href="#">Заказать</a>
+            </div>
+          </div>
           <div class="random-status-product__img">
             <img src="/img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
           </div>
-          <span class="random-status-product__price">Цена: 990 руб</span>
         </div>
-        <a class="random-status-product__order btn" href="#">Заказать</a>
       </section>
-      <section class="about-us">
+      <section class="about-us container">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item about-us__item--eco">Экологически<p class="paragraph">чистые материалы</p></li>
@@ -96,7 +100,7 @@
         </ul>
       </section>
 
-      <section class="opinions">
+      <section class="opinions container">
         <h2 class="opinions__title">Отзывы</h2>
         <div class="opinions__list">
           <blockquote class="opinions__item">
@@ -134,15 +138,15 @@
       </section>
     </main>
 
-    <footer class="page-footer container">
-      <section class="social">
+    <footer class="page-footer">
+      <section class="social container">
         <ul class="social__list">
           <li><a class="social__item social__item--inst" href="#">Instagram</a></li>
           <li><a class="social__item social__item--fb" href="#">Facebook</a></li>
           <li><a class="social__item social__item--twit" href="#">Twitter</a></li>
         </ul>
       </section>
-      <div class="designed">Разработано
+      <div class="designed container">Разработано
         <a class="designed__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="designed__hidden">HTML Academy</span>
         </a>
