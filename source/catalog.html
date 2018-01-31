@@ -47,18 +47,20 @@
 
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
-      <div class="catalog">
+      <div class="catalog container">
         <section class="catalog__item">
           <a class="catalog__link-wrapper" href="#">
             <img class="catalog__img" src="/img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
           </a>
-          <a class="catalog__link-wrapper" href="#">
-            <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
-          </a>
           <div class="catalog__description">
-              <p class="catalog__specs">Рост 30 см, вес 200 г</p>
+            <a class="catalog__title" href="#">
+              <h2>Зайчик-попрыгайчик</h2>
+            </a>
+            <p class="catalog__specs">Рост 30 см, вес 200 г</p>
+            <div class="catalog__order">
               <p class="catalog__price">1 200 руб.</p>
               <a class="catalog__basket-icon" href="#">Добавить в корзину</a>
+          </div>
           </div>
         </section>
 
@@ -66,13 +68,15 @@
           <a class="catalog__link-wrapper" href="#">
             <img class="catalog__img" src="/img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
           </a>
-          <a class="catalog__link-wrapper" href="#">
-            <h2 class="catalog__title">Корзинка для белья</h2>
-          </a>
           <div class="catalog__description">
+            <a class="catalog__title" href="#">
+              <h2>Корзинка для белья</h2>
+            </a>
             <p class="catalog__specs">Диаметр 15 см, высота 10 см</p>
-            <p class="catalog__price">690 руб.</p>
-            <a class="catalog__basket-icon" href="#">Добавить в корзину</a>
+            <div class="catalog__order">
+              <p class="catalog__price">690 руб.</p>
+              <a class="catalog__basket-icon" href="#">Добавить в корзину</a>
+            </div>
           </div>
         </section>
 
@@ -80,13 +84,15 @@
           <a class="catalog__link-wrapper" href="#">
             <img class="catalog__img" src="/img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
           </a>
-          <a class="catalog__link-wrapper" href="#">
-            <h2 class="catalog__title">Большая корзинка для игрушек</h2>
-          </a>
           <div class="catalog__description">
+            <a class="catalog__title" href="#">
+              <h2>Большая корзинка<p class="paragraph"> для игрушек</p></h2>
+            </a>
             <p class="catalog__specs">Диаметр 30 см, высотка 30 см</p>
-            <p class="catalog__price">1500 руб.</p>
-            <a class="catalog__basket-icon" href="#">Добавить в корзину</a>
+            <div class="catalog__order">
+              <p class="catalog__price">1500 руб.</p>
+              <a class="catalog__basket-icon" href="#">Добавить в корзину</a>
+            </div>
           </div>
         </section>
 
@@ -107,21 +113,28 @@
     </main>
 
     <footer class="page-footer">
-      <section class="social container">
-        <ul class="social__list">
-          <li><a class="social__item social__item--inst" href="#">Instagram</a></li>
-          <li><a class="social__item social__item--fb" href="#">Facebook</a></li>
-          <li><a class="social__item social__item--twit" href="#">Twitter</a></li>
-        </ul>
-      </section>
-      <div class="designed">Разработано
-        <a class="designed__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="designed__hidden">HTML Academy</span>
-        </a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo logo hidden">
+          <a class="logo__link">
+            <img class="logo__img" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+          </a>
+        </div>
+        <section class="social container">
+          <ul class="social__list">
+            <li><a class="social__item social__item--inst" href="#">Instagram</a></li>
+            <li><a class="social__item social__item--fb" href="#">Facebook</a></li>
+            <li><a class="social__item social__item--twit" href="#">Twitter</a></li>
+          </ul>
+        </section>
+        <div class="designed container">Разработано
+          <a class="designed__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="designed hidden">HTML Academy</span>
+          </a>
+        </div>
       </div>
     </footer>
 
-    <div class="modal container">
+    <div class="modal">
       <h1 class="modal__title">Добавить в корзину</h1>
       <h2 class="modal__sub-title">Выберите размер:</h2>
       <form class="modal__form">

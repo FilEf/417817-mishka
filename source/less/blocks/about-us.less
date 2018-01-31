@@ -1,5 +1,5 @@
 .about-us {
-  padding-top: 30px;
+  padding: 30px 0 53px 0;
   outline: 1px solid blue;
 }
 
@@ -26,13 +26,9 @@
   outline: 1px solid blue;
 }
 
-.about-us__item:last-child {
-  padding-bottom: 0;
-  margin-bottom: 53px;
-}
-
 @media (min-width: @tablet-width) {
   .about-us {
+    padding: 60px 50px 80px 50px;
     max-width: @tablet-width;
   }
   .about-us__title {
@@ -45,20 +41,44 @@
 
   .about-us__list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     font-size: 20px;
     line-height: 22px;
-    max-height: 640px;
   }
 
   .about-us__item {
-    max-width: 303px;
+    width: 50%;
   }
+
+  .about-us__item--eco {
+    order: 0;
+  }
+
+  .about-us__item--price {
+    order: 2;
+  }
+
+  .about-us__item--like {
+    order: 4;
+  }
+
+  .about-us__item--handmade {
+    order: 1;
+  }
+
+  .about-us__item--homeland {
+    order: 3;
+  }
+
+  .about-us__item--giftwrap {
+    order: 5;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
     .about-us {
+    padding: 68px 50px 90px 175px;
     max-width: @desktop-width;
   }
   .about-us__title {
@@ -67,18 +87,10 @@
     font-size: 53px;
     line-height: 57px;
     width: 65%;
-    margin: 0 auto;
   }
 
   .about-us__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 20px;
-    line-height: 22px;
-    max-height: 640px;
     width: 65%;
-    margin: 0 auto;
   }
 
   .about-us__item {
