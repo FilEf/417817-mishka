@@ -1,188 +1,161 @@
-.filter
-{
-    padding: 0 30px;
+.filter {
+  padding: 0 30px;
 
-    outline: 2px solid green;
+  outline: 2px solid green;
 }
 
-.filter__text
-{
-    font-size: 13px;
-    line-height: 24px;
+.filter__text {
+  font-size: 13px;
+  line-height: 24px;
 
-    outline: 1px solid green;
+  outline: 1px solid green;
 }
 
-.filter__fieldset
-{
-    margin-top: 30px;
+.filter__fieldset {
+  margin-top: 30px;
+  padding: 0;
+}
+
+.filter__input-list {
+  padding: 0;
+}
+
+.filter__input-item {
+  padding-top: 25px;
+
+  outline: 1px solid green;
+
+  .reset-list();
+}
+
+.filter__input-item--textarea {
+  width: 260px;
+  height: 142px;
+  padding: 0;
+}
+
+.filter__input-item--textarea textarea {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.filter__note {
+  font-size: 14px;
+  line-height: 16px;
+
+  margin: 0;
+  padding: 18px 0 31px 0;
+}
+
+.filter__sent-order {
+  margin-bottom: 55px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: @tablet-width) {
+  .filter {
     padding: 0;
-}
+  }
 
-.filter__input-list
-{
-    padding: 0;
-}
+  .filter__text {
+    font-size: 17px;
+    line-height: 30px;
 
-.filter__input-item
-{
-    padding-top: 25px;
+    padding: 0 50px;
+  }
 
-    outline: 1px solid green;
-
-    .reset-list();
-}
-
-.filter__input-item--textarea
-{
-    width: 260px;
-    height: 142px;
-    padding: 0;
-}
-
-.filter__input-item--textarea textarea
-{
-    width: 100%;
-    height: 100%;
-    padding: 0;
-}
-
-.filter__note
-{
-    font-size: 14px;
-    line-height: 16px;
+  .filter__fieldset {
+    position: relative;
 
     margin: 0;
-    padding: 18px 0 31px 0;
+    padding: 50px 50px;
+
+    border: none;
+  }
+
+  .filter__fieldset--hl {
+    background-color: @color-dark-grey;
+  }
+
+  .filter__legend {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 16px;
+
+    position: absolute;
+    top: 80px;
+
+    color: @color-mint;
+  }
+
+  .filter__input-list {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 167px;
+    padding: 0;
+
+    flex-wrap: wrap;
+  }
+
+  .filter__input-list--checkbox {
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  .filter__input-item {
+    height: 50px;
+
+    .reset-list();
+  }
+
+  .filter__input-list--checkbox
+  .filter__input-item {
+    width: 50%;
+  }
+
+  .filter__input-item--textarea {
+    width: 501px;
+    height: 142px;
+  }
+
+  .filter__btn-note {
+    display: flex;
+
+    padding: 0 50px;
+
+    justify-content: space-between;
+  }
+
+  .filter__note {
+    order: 1;
+  }
 }
 
-.filter__sent-order
-{
-    margin-bottom: 55px;
+@media (min-width: @desktop-width) {
+  .filter__input-list {
+    width: 700px;
+    margin-left: 113px;
+  }
 
-    background-color: rgb(255, 255, 255);
-}
+  .filter__input-list--checkbox
+  .filter__input-item {
+    width: 30%;
+  }
 
-@media (min-width: @tablet-width)
-{
-    .filter
-    {
-        padding: 0;
-    }
+  .filter__input-item--textarea {
+    width: 700px;
+  }
 
-    .filter__text
-    {
-        font-size: 17px;
-        line-height: 30px;
-
-        padding: 0 50px;
-    }
-
-    .filter__fieldset
-    {
-        position: relative;
-
-        margin: 0;
-        padding: 50px 50px;
-
-        border: none;
-    }
-
-    .filter__fieldset--hl
-    {
-        background-color: @color-dark-grey;
-    }
-
-    .filter__legend
-    {
-        font-size: 17px;
-        font-weight: bold;
-        line-height: 16px;
-
-        position: absolute;
-        top: 80px;
-
-        color: @color-mint;
-    }
-
-    .filter__input-list
-    {
-        font-size: 19px;
-        font-weight: bold;
-        line-height: 18px;
-
-        display: flex;
-        flex-direction: column;
-
-        margin-left: 167px;
-        padding: 0;
-
-        flex-wrap: wrap;
-    }
-
-    .filter__input-list--checkbox
-    {
-        flex-direction: row;
-
-        justify-content: space-between;
-    }
-
-    .filter__input-item
-    {
-        height: 50px;
-
-        .reset-list();
-    }
-
-    .filter__input-list--checkbox
-    .filter__input-item
-    {
-        width: 50%;
-    }
-
-    .filter__input-item--textarea
-    {
-        width: 501px;
-        height: 142px;
-    }
-
-    .filter__btn-note
-    {
-        display: flex;
-
-        padding: 0 50px;
-
-        justify-content: space-between;
-    }
-
-    .filter__note
-    {
-        order: 1;
-    }
-}
-
-@media (min-width: @desktop-width)
-{
-    .filter__input-list
-    {
-        width: 700px;
-        margin-left: 113px;
-    }
-
-    .filter__input-list--checkbox
-    .filter__input-item
-    {
-        width: 30%;
-    }
-
-    .filter__input-item--textarea
-    {
-        width: 700px;
-    }
-
-    .filter__btn-note
-    {
-        width: 700px;
-        margin-left: 113px;
-    }
+  .filter__btn-note {
+    width: 700px;
+    margin-left: 113px;
+  }
 }

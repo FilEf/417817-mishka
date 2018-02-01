@@ -1,164 +1,143 @@
-.main-nav
-{
-    font-size: 17px;
-    font-weight: bold;
+.main-nav {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  outline: 1px solid green;
+}
+
+.main-nav__list {
+  padding: 0;
+
+  outline: 1px solid green;
+
+  .reset-list();
+}
+
+.main-nav__item {
+  padding: 35px 0;
+
+  outline: 1px solid green;
+}
+
+.main-nav__list--desktop-only {
+  display: none;
+}
+
+.main-nav__name {
+  text-decoration: none;
+
+  color: rgb(0, 0, 0);
+}
+
+.main-nav__add-info {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 24px;
+
+  display: none;
+}
+
+
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    flex-direction: row;
+
+    width: @tablet-width;
+
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    width: inherit;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__list--services {
+    font-size: 15px;
     line-height: 24px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    align-items: flex-start;
+  }
+
+  .main-nav__list--sub-nav {
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+    order: -1;
+  }
+
+  .main-nav__item {
+    min-width: 159px;
+    padding: 33px 0;
 
     outline: 1px solid green;
-}
+  }
 
-.main-nav__list
-{
-    padding: 0;
+  .main-nav__add-info {
+    display: block;
 
-    outline: 1px solid green;
-
-    .reset-list();
-}
-
-.main-nav__item
-{
-    padding: 35px 0;
+    margin: 0;
+    padding: 33px 0;
 
     outline: 1px solid green;
+  }
 }
 
-.main-nav__list--desktop-only
-{
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
     display: none;
-}
+  }
 
-.main-nav__name
-{
-    text-decoration: none;
+  .main-nav__list--desktop-only {
+    display: flex;
+  }
 
-    color: rgb(0, 0, 0);
-}
+  .main-nav {
+    flex-direction: row;
 
-.main-nav__add-info
-{
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 24px;
+    width: @desktop-width;
 
-    display: none;
-}
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
 
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
 
+    width: inherit;
 
-@media (min-width: @tablet-width)
-{
-    .main-nav__toggle
-    {
-        display: none;
-    }
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    .main-nav
-    {
-        flex-direction: row;
+  .main-nav__list--services {
+    order: -2;
+  }
 
-        width: @tablet-width;
+  .main-nav__item {
+    min-width: 180px;
+    padding: 33px 0;
 
-        align-content: flex-start;
-        flex-wrap: wrap;
-    }
-
-    .main-nav__wrapper
-    {
-        display: flex;
-        flex-direction: row;
-
-        width: inherit;
-
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .main-nav__list--services
-    {
-        font-size: 15px;
-        line-height: 24px;
-
-        display: flex;
-        flex-direction: row;
-
-        align-items: flex-start;
-    }
-
-    .main-nav__list--sub-nav
-    {
-        display: flex;
-        flex-direction: row;
-
-        align-items: flex-start;
-        order: -1;
-    }
-
-    .main-nav__item
-    {
-        min-width: 159px;
-        padding: 33px 0;
-
-        outline: 1px solid green;
-    }
-
-    .main-nav__add-info
-    {
-        display: block;
-
-        margin: 0;
-        padding: 33px 0;
-
-        outline: 1px solid green;
-    }
-}
-
-@media (min-width: @desktop-width)
-{
-    .main-nav__toggle
-    {
-        display: none;
-    }
-
-    .main-nav__list--desktop-only
-    {
-        display: flex;
-    }
-
-    .main-nav
-    {
-        flex-direction: row;
-
-        width: @desktop-width;
-
-        align-content: flex-start;
-        flex-wrap: wrap;
-    }
-
-    .main-nav__wrapper
-    {
-        display: flex;
-        flex-direction: row;
-
-        width: inherit;
-
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .main-nav__list--services
-    {
-        order: -2;
-    }
-
-    .main-nav__item
-    {
-        min-width: 180px;
-        padding: 33px 0;
-
-        outline: 1px solid green;
-    }
+    outline: 1px solid green;
+  }
 }

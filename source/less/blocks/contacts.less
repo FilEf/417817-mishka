@@ -1,171 +1,147 @@
-.contacts
-{
-    padding: 43px 0 39px 0;
+.contacts {
+  padding: 43px 0 39px 0;
 
-    outline: 1px solid blue;
+  outline: 1px solid blue;
 }
 
 
-.contacts__title
-{
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 30px;
+.contacts__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
 
-    margin: 0;
+  margin: 0;
 
-    outline: 1px solid blue;
+  outline: 1px solid blue;
 }
 
-.contacts__info
-{
-    font-size: 15px;
-    line-height: 30px;
+.contacts__info {
+  font-size: 15px;
+  line-height: 30px;
 
-    padding: 20px 0;
+  padding: 20px 0;
 
-    outline: 1px solid blue;
+  outline: 1px solid blue;
 
-    .reset-list();
+  .reset-list();
 }
 
-.contacts__item
-{
+.contacts__item {
+  display: flex;
+
+  min-height: 20px;
+  padding: 20px 0;
+
+  outline: 1px solid blue;
+}
+
+.contacts__type {
+  min-width: 77px;
+  margin: 0;
+
+  outline: 1px solid blue;
+}
+
+.contacts__data {
+  margin: 0;
+
+  outline: 1px solid blue;
+}
+
+.contacts__maps {
+  position: relative;
+
+  outline: 1px solid blue;
+}
+
+iframe.contacts__map-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 0;
+}
+
+.contacts__write-us {
+  margin: 39px auto 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding: 69px 0 57px 0;
+
+    outline: 1px solid blue;
+  }
+
+  .contacts__info {
     display: flex;
 
-    min-height: 20px;
-    padding: 20px 0;
+    padding: 0 50px;
 
-    outline: 1px solid blue;
+    justify-content: space-between;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__item {
+    font-size: 17px;
+    line-height: 30px;
+
+    width: 50%;
+  }
+
+  .contacts__map-item {
+    width: 100%;
+  }
+
+  .contacts__write-us {
+    margin-top: 55px;
+  }
 }
 
-.contacts__type
-{
-    min-width: 77px;
-    margin: 0;
-
-    outline: 1px solid blue;
-}
-
-.contacts__data
-{
-    margin: 0;
-
-    outline: 1px solid blue;
-}
-
-.contacts__maps
-{
+@media (min-width: @desktop-width) {
+  .contacts {
     position: relative;
 
-    outline: 1px solid blue;
-}
+    padding: 69px 50px 57px 175px;
+  }
 
-iframe.contacts__map-item
-{
-    position: absolute;
-    top: 0;
-    left: 0;
+  .contacts_wrapper {
+    width: 302px;
+    margin-top: 80px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__info {
+    display: block;
 
     padding: 0;
-}
+  }
 
-.contacts__write-us
-{
-    margin: 39px auto 0;
-}
+  .contacts__item {
+    width: 100%;
+    margin: 0;
+  }
 
-@media (min-width: @tablet-width)
-{
-    .contacts
-    {
-        padding: 69px 0 57px 0;
+  .contacts__maps {
+    position: absolute;
+    top: 69px;
+    right: 50px;
 
-        outline: 1px solid blue;
-    }
+    width: 525px;
+    height: 457px;
+  }
 
-    .contacts__info
-    {
-        display: flex;
-
-        padding: 0 50px;
-
-        justify-content: space-between;
-    }
-
-    .contacts__title
-    {
-        font-size: 43px;
-        line-height: 50px;
-    }
-
-    .contacts__item
-    {
-        font-size: 17px;
-        line-height: 30px;
-
-        width: 50%;
-    }
-
-    .contacts__map-item
-    {
-        width: 100%;
-    }
-
-    .contacts__write-us
-    {
-        margin-top: 55px;
-    }
-}
-
-@media (min-width: @desktop-width)
-{
-    .contacts
-    {
-        position: relative;
-
-        padding: 69px 50px 57px 175px;
-    }
-
-    .contacts_wrapper
-    {
-        width: 302px;
-        margin-top: 80px;
-    }
-
-    .contacts__title
-    {
-        font-size: 53px;
-        line-height: 57px;
-    }
-
-    .contacts__info
-    {
-        display: block;
-
-        padding: 0;
-    }
-
-    .contacts__item
-    {
-        width: 100%;
-        margin: 0;
-    }
-
-    .contacts__maps
-    {
-        position: absolute;
-        top: 69px;
-        right: 50px;
-
-        width: 525px;
-        height: 457px;
-    }
-
-    .contacts__write-us
-    {
-        width: 230px;
-        margin: 0;
-        margin-top: 56px;
-    }
+  .contacts__write-us {
+    width: 230px;
+    margin: 0;
+    margin-top: 56px;
+  }
 }
