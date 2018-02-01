@@ -1,56 +1,110 @@
-.good-sorts {
-  margin-bottom: 35px;
-  outline: 1px solid orange;
-  background: @color-light-grey url("../../../img/hero-mobile@1x.jpg") no-repeat center -20px;
+.good-sorts
+{
+    margin-bottom: 35px;
+
+    outline: 1px solid orange;
+    background: @color-light-grey url('../../../img/hero-mobile@1x.jpg') no-repeat center -20px;
 }
 
-.good-sorts__title {
-  margin: 0 0 120px 0;
-  padding: 72px 30px 0 30px;
-  text-align: center;
-  font-size: 27px;
-  font-weight: bold;
-  line-height: 30px;
+.good-sorts__title
+{
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 30px;
+
+    margin: 0 0 120px 0;
+    padding: 72px 30px 0 30px;
+
+    text-align: center;
 }
 
-.good-sorts__list {
-  .reset-list();
-  outline: 1px solid green;
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 24px;
+.good-sorts__list
+{
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 24px;
+
+    outline: 1px solid green;
+
+    .reset-list();
 }
 
-.good-sorts__item {
-  outline: 1px solid blue;
-  padding: 30px 30px;
-  min-height: 43px;
+.good-sorts__item
+{
+    min-height: 43px;
+    padding: 30px 30px;
+
+    outline: 1px solid blue;
 }
 
-.good-sorts__item:nth-child(odd) {
-  background-color: rgb(99, 209, 187);
+.good-sorts__item:nth-child(odd)
+{
+    background-color: rgb(99, 209, 187);
 }
 
-.good-sorts__item:nth-child(even) {
-  background-color: rgb(86, 195, 178);
+.good-sorts__item:nth-child(even)
+{
+    background-color: rgb(86, 195, 178);
 }
 
-.good-sorts__name {
-  display: block;
-  width: 130px;
-  color: @color-light-grey;
-  text-decoration: none;
+.good-sorts__name
+{
+    display: block;
+
+    width: 130px;
+
+    text-decoration: none;
+
+    color: @color-light-grey;
 }
 
-@media (min-width: @tablet-width) {
-  .good-sorts__list {
-    display: flex;
-    flex-grow: 1;
-    margin-bottom: 54px;
-  }
+@media (min-width: @tablet-width)
+{
+    .good-sorts
+    {
+        display: flex;
 
-  .good-sorts__item {
-    flex-grow: 1;
-  }
+        max-width: 100%;
+        height: 740px;
+        margin-top: -90px;
 
+        background: url('../../../img/hero-mobile@1x.jpg') 50% 0 no-repeat @color-light-grey;
+        background-size: cover;
+
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    .good-sorts__title
+    {
+        font-size: 43px;
+        line-height: 50px;
+
+        width: 100%;
+        margin-bottom: 210px;
+        padding-top: 0;
+    }
+
+    .good-sorts__list
+    {
+        display: flex;
+
+        flex-grow: 1;
+    }
+
+    .good-sorts__item
+    {
+        max-height: 60px;
+
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: @desktop-width)
+{
+    .good-sorts__title
+    {
+        font-size: 53px;
+        line-height: 57px;
+    }
 }
