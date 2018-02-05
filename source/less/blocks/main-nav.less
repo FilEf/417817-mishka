@@ -1,37 +1,134 @@
-@import "../mixins.less";
-@import "../general.less";
-
 .main-nav {
-  outline: 1px solid green;
   font-size: 17px;
-  line-height: 24px;
   font-weight: bold;
-}
+  line-height: 24px;
 
-.main-nav__list--upper {
-  .reset-list();
   outline: 1px solid green;
-}
 
-.main-nav__list--lower {
-  .reset-list();
-  outline: 1px solid green;
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .main-nav__list--lower {
+  @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
+
+    width: @tablet-width;
+
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+
+    align-content: flex-start;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+
+    width: inherit;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+
+    width: inherit;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+
+  outline: 1px solid green;
+
+  .reset-list();
+
+  &--news {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--services {
+      font-size: 15px;
+      line-height: 24px;
+
+      display: flex;
+      flex-direction: row;
+
+      align-items: flex-start;
+    }
+
+    &--sub-nav {
+      display: flex;
+      flex-direction: row;
+
+      align-items: flex-start;
+      order: -1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--news {
+      display: flex;
+    }
+
+    &--services {
+      order: -2;
+    }
   }
 }
 
 .main-nav__item {
-  padding: 33px 0;
-  text-align: center;
+  padding: 35px 0;
+
   outline: 1px solid green;
+
+  @media (min-width: @tablet-width) {
+    min-width: 159px;
+    padding: 33px 0;
+
+    outline: 1px solid green;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 180px;
+    padding: 33px 0;
+  }
 }
 
 .main-nav__name {
   text-decoration: none;
+
   color: rgb(0, 0, 0);
+}
+
+.main-nav__add-info {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 24px;
+
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+
+    margin: 0;
+    padding: 33px 0;
+
+    outline: 1px solid green;
+  }
 }

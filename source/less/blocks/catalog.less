@@ -1,53 +1,132 @@
+.catalog {
+  @media (min-width: @desktop-width) {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .catalog__item {
-  padding: 0 30px;
   margin-top: 30px;
+
   outline: 1px solid red;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    height: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 30%;
+    height: 659px;
+
+    flex-wrap: wrap;
+  }
 }
 
 .catalog__link-wrapper {
-  text-decoration: none;
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    height: 462px;
+  }
 }
 
 .catalog__img {
   margin: 0 auto;
+
   background-color: rgb(241, 241, 241);
 }
 
-.catalog__title {
-  margin: 0;
+.catalog__description {
+  display: flex;
+
   padding: 0 30px;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
+
   outline: 1px solid red;
+
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
-.catalog__description {
-  padding: 0 30px;
+.catalog__title {
+  text-decoration: none;
+
   outline: 1px solid red;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.catalog__title-name {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+
+    padding-top: 10%;
+  }
 }
 
 .catalog__specs {
-  margin: 0;
   font-size: 13px;
   line-height: 30px;
+
+  width: 100%;
+  margin: 0;
   padding-bottom: 25px;
+
   outline: 1px solid red;
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+
+    flex-grow: 1;
+  }
+}
+
+.catalog__order {
+  display: flex;
 }
 
 .catalog__price {
-  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+
+  width: 65%;
   margin: 0;
   padding: 19px 0;
-  width: 130px;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: bold;
+
   outline: 1px solid red;
+
+  @media (min-width: @tablet-width) {
+    font-size: spx;
+  }
 }
 
 .catalog__basket-icon {
-  display: flex;
-  width: 45px;
+  width: 35%;
+
   outline: 1px solid red;
 }

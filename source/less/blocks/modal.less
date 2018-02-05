@@ -1,47 +1,77 @@
-@import "../mixins.less";
-
 .modal {
+  padding: 36px 30px 46px 30px;
+
   border: 1px solid rgb(199, 199, 199);
   box-shadow: 0 10px 10px -10px rgb(198, 198, 198);
+
+  @media (min-width: @tablet-width) {
+    width: 358px;
+    margin: 0 auto;
+    padding: 50px 110px 46px 110px;
+  }
 }
 
 .modal__form {
   margin: 0;
-  padding: 0 30px;
 }
 
 
 .modal__title {
-  margin: 0 0 13px 0;
-  padding: 0 80px;
   font-size: 25px;
-  line-height: 30px;
   font-weight: bold;
+  line-height: 30px;
+
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 13px;
+
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .modal__sub-title {
-  margin: 0 0 20px 0;
   font-size: 15px;
-  line-height: 30px;
   font-weight: normal;
+  line-height: 30px;
+
+  margin: 0 0 20px 0;
+
   text-align: center;
 }
 
 .modal__list {
-  .reset-list();
   display: flex;
+
+  width: 100%;
+
+  .reset-list();
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
+
 .modal__size-item {
-  margin-right: 7px;
-  margin-bottom: 31px;
-  width: 82px;
-  height: 52px;
   font-size: 17px;
   line-height: 16px;
+
+  width: 82px;
+  height: 52px;
+  margin-right: 7px;
+  margin-bottom: 31px;
+
   outline: 1px solid red;
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
 }
 
 .modal__size-item:last-child {
@@ -49,8 +79,13 @@
 }
 
 .modal__add {
-  background-color: rgb(99, 209, 187);
-  border: none;
+  margin: 0 auto;
+
   color: rgb(255, 255, 255);
-  margin-bottom: 46px;
+  border: none;
+  background-color: rgb(99, 209, 187);
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
