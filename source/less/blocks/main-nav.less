@@ -23,6 +23,8 @@
 }
 
 .main-nav__wrapper {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
@@ -45,6 +47,36 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+
+  display: block;
+
+  width: 80px;
+  height: 80px;
+
+  cursor: pointer;
+  outline: none;
+
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--nojs {
+    display: none;
+  }
+
+  &--opened {
+    background-image: url("../img/icon-menu-close.svg");
+  }
+
+  &--closed {
+    background-image: url("../img/icon-menu-open.svg");
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -57,7 +89,12 @@
 
   .reset-list();
 
-  &--news {
+  &--opened {
+    display: block;
+  }
+
+  &--news,
+  &--closed {
     display: none;
   }
 
