@@ -1,4 +1,6 @@
 .hit-product {
+  padding-bottom: 36px;
+
   text-align: left;
 
   outline: 1px solid red;
@@ -42,8 +44,9 @@
   font-weight: bold;
   line-height: 30px;
 
-  margin: 0;
-  padding-bottom: 11px;
+  margin-top: 27px;
+  margin-bottom: 0;
+  padding: 0;
 
   outline: 1px solid red;
 
@@ -71,6 +74,7 @@
   line-height: 20px;
 
   margin: 0;
+  padding-top: 6px;
   padding-bottom: 22px;
 
   text-transform: uppercase;
@@ -106,7 +110,7 @@
   line-height: 24px;
 
   margin: 0;
-  padding-bottom: 22px;
+  margin-bottom: 17px;
 
   outline: 1px solid red;
 
@@ -147,16 +151,23 @@
 }
 
 .hit-product__spec-item {
-  padding: 12px 0 12px 0;
+  display: flex;
+
+  padding: 10px 0;
 
   outline: 1px solid red;
 }
 
+.hit-product__spec-name {
+  width: 97px;
+}
+
 .hit-product__img {
+  margin-top: 29px;
   margin-bottom: 22px;
 
   outline: 1px solid red;
-  background-color: @color-light-grey;
+  background-color: @color-dark-grey;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -190,6 +201,8 @@
   line-height: 24px;
 
   display: block;
+
+  margin-bottom: 25px;
 
   text-align: center;
 
