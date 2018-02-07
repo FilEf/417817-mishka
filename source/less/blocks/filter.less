@@ -13,6 +13,8 @@
   line-height: 24px;
 
   outline: 1px solid green;
+  margin-top: -9px;
+  margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
@@ -23,8 +25,11 @@
 }
 
 .filter__fieldset {
-  margin-top: 30px;
+  position: relative;
   padding: 0;
+  margin: 0;
+  margin-top: 9px;
+
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -41,10 +46,11 @@
 }
 
 .filter__legend {
-  @media (min-width: @tablet-width) {
     font-size: 17px;
     font-weight: bold;
     line-height: 16px;
+    text-transform: uppercase;
+  @media (min-width: @tablet-width) {
 
     position: absolute;
     top: 80px;
@@ -55,6 +61,20 @@
 
 .filter__input-list {
   padding: 0;
+  margin: 0;
+  margin-top: 23px;
+
+  &--textfield {
+    margin-top: 30px;
+  }
+
+  &--single {
+    margin-top: 22px;
+  }
+
+  &--textarea {
+    margin-top: 27px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 19px;
@@ -82,8 +102,39 @@
   }
 }
 
+li.filter__input-item {
+  display: block;
+  height: 69px;
+  margin-bottom: 22px;
+}
+.filter__input-list--radio .filter__input-item,
+.filter__input-list--checkbox .filter__input-item {
+  height: 30px;
+  margin-bottom: 20px;
+  padding-top: 11px;
+  padding-left: 61px;
+}
+
+.filter__input-list--single .filter__input-item {
+  height: 35px;
+}
+
+.filter__input-list--textarea .filter__input-item {
+  height: 142px;
+  margin-bottom: 13px;
+}
+
+.filter__label {
+  display: block;
+  margin-bottom: 15px;
+}
+
 .filter__input-item {
-  padding-top: 25px;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 30px 0;
 
   outline: 1px solid green;
 
@@ -147,7 +198,8 @@
   line-height: 16px;
 
   margin: 0;
-  padding: 18px 0 31px 0;
+  padding: 0;
+  padding-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     order: 1;
