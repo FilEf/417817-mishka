@@ -16,8 +16,8 @@
               <img class="logo__img" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
             </a>
           </div>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list main-nav__list--services">
+          <button class="main-nav__toggle  main-nav__toggle--closed main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list main-nav__list--opened main-nav__list--services">
             <li class="main-nav__item">
               <a class="main-nav__name">Каталог товаров</a>
             </li>
@@ -25,7 +25,7 @@
               <a class="main-nav__name" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__list main-nav__list--sub-nav">
+          <ul class="main-nav__list main-nav__list--opened main-nav__list--sub-nav">
             <li class="main-nav__item">
               <a class="main-nav__name" href="#">Поиск по сайту</a>
             </li>
@@ -33,11 +33,11 @@
               <a class="main-nav__name" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-          <ul class="main-nav__list main-nav__list--news main-nav__list--desktop-only">
-            <li class="main-nav__item main-nav__item--desktop-only">
+          <ul class="main-nav__list main-nav__list--news">
+            <li class="main-nav__item">
               <a class="main-nav__name" href="#">Новые поступления</a>
             </li>
-            <li class="main-nav__item main-nav__item--desktop-only">
+            <li class="main-nav__item">
               <a class="main-nav__name" href="#">Распродажа</a>
             </li>
           </ul>
@@ -156,6 +156,6 @@
         <button class="modal__add btn" type="submit" formmethod="post" formaction="https://echo.htmlacademy.ru" formtarget="_blank">Добавить</button>
       </form>
     </div>
-
+  <script src="js/main-nav-toggle.js"></script>
   </body>
 </html>
