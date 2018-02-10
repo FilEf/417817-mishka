@@ -99,6 +99,8 @@
   }
 
   @media (min-width: @tablet-width) {
+    height: 90px;
+
     &--services {
       font-size: 15px;
       line-height: 24px;
@@ -130,6 +132,8 @@
 }
 
 .main-nav__item {
+  position: relative;
+
   height: 51px;
   padding-top: 28px;
   padding-left: 45px;
@@ -137,8 +141,9 @@
   outline: 1px solid green;
 
   @media (min-width: @tablet-width) {
-    min-width: 159px;
-    padding: 33px 0;
+    min-width: 85px;
+    height: 28px;
+    padding: 31px 0;
 
     outline: 1px solid green;
   }
@@ -146,6 +151,21 @@
   @media (min-width: @desktop-width) {
     min-width: 180px;
     padding: 33px 0;
+  }
+}
+
+.main-nav__list--sub-nav .main-nav__item:last-child {
+  @media (min-width: @tablet-width) {
+    width: 263px;
+
+    text-align: right;
+  }
+}
+
+.main-nav__list--services .main-nav__item {
+  @media (min-width: @tablet-width) {
+    width: 167px;
+    padding-top: 15px;
   }
 }
 
@@ -166,7 +186,7 @@
     display: block;
 
     margin: 0;
-    padding: 33px 0;
+    padding-top: 15px;
 
     outline: 1px solid green;
   }

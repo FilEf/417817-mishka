@@ -4,7 +4,7 @@
   outline: 1px solid blue;
 
   @media (min-width: @tablet-width) {
-    padding: 69px 0 57px 0;
+    padding: 61px 0 57px 0;
 
     outline: 1px solid blue;
   }
@@ -19,6 +19,10 @@
 .contacts_wrapper {
   margin-bottom: 37px;
   padding: 0 30px;
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+    margin-bottom: 57px;
+  }
   @media (min-width: @desktop-width) {
     width: 302px;
     margin-top: 80px;
@@ -38,8 +42,12 @@
   outline: 1px solid blue;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
     font-size: 43px;
     line-height: 50px;
+    height: 70px;
+    padding-top: 15px;
+
   }
 
   @media (min-width: @desktop-width) {
@@ -58,8 +66,6 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-
-    padding: 0 50px;
 
     justify-content: space-between;
   }
@@ -82,6 +88,7 @@
   @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    margin: 0;
 
     width: 50%;
   }
@@ -136,7 +143,8 @@ iframe.contacts__map-item {
   margin: 38px auto 0;
 
   @media (min-width: @tablet-width) {
-    margin-top: 55px;
+    margin-top: 52px;
+    width: 230px;
   }
 
   @media (min-width: @desktop-width) {
