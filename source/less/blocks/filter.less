@@ -5,6 +5,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    margin-bottom: -2px;
   }
 }
 
@@ -25,14 +26,19 @@
     margin-bottom: 23px;
     padding: 0 50px;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 225px;
+    padding-left: 225px;
+  }
 }
 
 .filter__fieldset-wrapper {
   margin-top: 10px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 0;
     height: 178px;
+    margin-top: 0;
     padding-top: 50px;
   }
 }
@@ -75,6 +81,18 @@
     &--textarea {
       padding-top: 50px;
       padding-bottom: 43px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 112px;
+
+    &--checkbox {
+      padding-top: 33px;
+    }
+
+    &--textarea {
+      padding-bottom: 42px;
     }
   }
 }
@@ -161,8 +179,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 700px;
+    width: 875px;
     margin-left: 113px;
+
+    justify-content: flex-start;
   }
 }
 
@@ -218,26 +238,33 @@
 
 .filter__input-list--checkbox .filter__input-item {
   @media (min-width: @tablet-width) {
+    width: 30%;
     height: 36px;
+    margin-right: 6px;
     margin-bottom: 24px;
     padding-top: 16px;
     padding-left: 82px;
   }
-}
-
-.filter__input-list--checkbox .filter__input-item {
-  @media (min-width: @tablet-width) {
-    width: 30%;
-    margin-right: 6px;
-  }
 
   @media (min-width: @desktop-width) {
-    width: 30%;
+    width: 155px;
+    margin-right: 23px;
+    margin-right: 26px;
+  }
+}
+
+.filter__input-list--textfield .filter__input-item {
+  @media (min-width: @desktop-width) {
+    width: 700px;
   }
 }
 
 .filter__input-list--single .filter__input-item {
   height: 52px;
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
 }
 
 .filter__input-list--textarea .filter__input-item {
@@ -245,6 +272,10 @@
   margin-bottom: 13px;
   @media (min-width: @tablet-width) {
     margin-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
   }
 }
 
@@ -272,7 +303,7 @@
 
   @media (min-width: @desktop-width) {
     width: 700px;
-    margin-left: 113px;
+    margin-left: 175px;
   }
 }
 
