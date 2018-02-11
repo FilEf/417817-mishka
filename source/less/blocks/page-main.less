@@ -17,20 +17,67 @@
   background-color: rgb(241, 241, 241);
 
   @media (min-width: @tablet-width) {
+    position: relative;
     font-size: 43px;
     line-height: 50px;
 
     margin-top: -92px;
-    margin-bottom: 81px;
+    margin-bottom: 79px;
     padding-top: 94px;
-    padding-bottom: 23px;
+
+    padding-bottom: 25px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    padding-bottom: 55px;
 
     margin-top: -41px;
-    margin-bottom: 161px;
+    margin-bottom: 130px;
+  }
+}
+
+.page-main__title::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    right: 0;
+
+    background-repeat: repeat;
+
+    height: 10px;
+
+    background-size: 20px 20px;
+
+    background-image: radial-gradient(circle at 10px -4px, transparent 12px, white 13px);
+  }
+}
+
+.page-main__title::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    right: 0;
+
+    background-repeat: repeat;
+
+    height: 15px;
+
+    background-size: 40px 20px;
+
+    background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
   }
 }
