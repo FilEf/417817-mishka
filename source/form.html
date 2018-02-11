@@ -27,7 +27,7 @@
           </ul>
           <ul class="main-nav__list main-nav__list--opened main-nav__list--sub-nav">
             <li class="main-nav__item">
-              <a class="main-nav__name" href="#">Поиск по сайту</a>
+              <a class="main-nav__name visually-hidden" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__name" href="#">Корзина: пока пуста</a>
@@ -51,7 +51,7 @@
       <form class="filter" action="form.php" method="GET">
         <p class="filter__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="filter__fieldset">
-          <legend class="filter__legend">Тип</legend>
+          <legend class="filter__legend filter__legend--radio">Тип</legend>
           <ul class="filter__input-list filter__input-list--radio">
             <li class="filter__input-item">
               <input class="filter__radio visually-hidden"  type="radio" name="type" value="interior" id="interior-type" checked>
@@ -64,8 +64,8 @@
           </ul>
         </fieldset>
 
-        <fieldset class="filter__fieldset filter__fieldset--hl">
-          <legend class="filter__legend">Цвет</legend>
+        <fieldset class="filter__fieldset filter__fieldset--checkbox filter__fieldset--hl">
+          <legend class="filter__legend filter__legend--checkbox">Цвет</legend>
           <ul class="filter__input-list filter__input-list--checkbox">
             <li class="filter__input-item">
               <input class="filter__checkbox visually-hidden"  type="checkbox" name="w-clr" id="white-color" checked>
@@ -93,8 +93,8 @@
             </li>
         </fieldset>
 
-        <fieldset class="filter__fieldset">
-          <legend class="filter__legend">ФИО</legend>
+        <fieldset class="filter__fieldset filter__fieldset--textfield">
+          <legend class="filter__legend filter__legend--textfield">ФИО</legend>
           <ul class="filter__input-list filter__input-list--textfield">
             <li class="filter__input-item">
               <label class="filter__label"  for="write-name">Имя:</label>
@@ -111,26 +111,28 @@
           </ul>
         </fieldset>
 
-        <fieldset class="filter__fieldset filter__fieldset--hl">
-          <legend class="filter__legend">Тел</legend>
-          <ul class="filter__input-list filter__input-list--single">
-            <li class="filter__input-item">
-              <input class="filter__field"  type="text" name="phone" id="write-phone" placeholder="+7 XXX XX XX*" required>
-            </li>
-        </ul>
-        </fieldset>
-
-        <fieldset class="filter__fieldset filter__fieldset--hl">
-          <legend class="filter__legend">E-mail</legend>
-          <ul class="filter__input-list filter__input-list--single">
-            <li class="filter__input-item">
-              <input class="filter__field"  type="email" name="email" id="write-email" placeholder="Ваш Email*" required>
-            </li>
+        <div class="filter__fieldset-wrapper filter__fieldset-wrapper--hl">
+          <fieldset class="filter__fieldset filter__fieldset--single">
+            <legend class="filter__legend filter__legend--single">Тел</legend>
+            <ul class="filter__input-list filter__input-list--single">
+              <li class="filter__input-item">
+                <input class="filter__field"  type="text" name="phone" id="write-phone" placeholder="+7 XXX XX XX*" required>
+              </li>
           </ul>
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="filter__fieldset">
-          <legend class="filter__legend">Доп</legend>
+          <fieldset class="filter__fieldset filter__fieldset--single">
+            <legend class="filter__legend filter__legend--single">E-mail</legend>
+            <ul class="filter__input-list filter__input-list--single">
+              <li class="filter__input-item">
+                <input class="filter__field"  type="email" name="email" id="write-email" placeholder="Ваш Email*" required>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <fieldset class="filter__fieldset filter__fieldset--textarea">
+          <legend class="filter__legend filter__legend--textarea">Доп</legend>
           <ul class="filter__input-list filter__input-list--textarea">
             <li class="filter__input-item filter__input-item--textarea">
               <textarea class="filter__textarea" name="add-info" id="write-add-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -147,11 +149,11 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo logo hidden">
-          <a class="logo__link">
+          <a class="page-footer__logo-link">
             <img class="logo__img" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
           </a>
         </div>
-        <div class="page-footer__social container">
+        <div class="page-footer__social">
           <ul class="page-footer__social-list">
             <li><a class="page-footer__social-item page-footer__social-item--inst" href="#">Instagram</a></li>
             <li><a class="page-footer__social-item page-footer__social-item--fb" href="#">Facebook</a></li>
