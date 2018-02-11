@@ -11,6 +11,13 @@
     justify-content: space-between;
     align-items: baseline;
   }
+
+  @media (min-width: @desktop-width) {
+    height: 144px;
+    margin-top: 50px;
+    padding: 0;
+    align-items: stretch;
+  }
 }
 
 .page-footer__logo {
@@ -23,12 +30,21 @@
 
     text-align: left;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 54px;
+    height: 90px;
+  }
 }
 
 .page-footer__social {
   @media (min-width: @tablet-width) {
     width: 50%;
     height: 80px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 54px;
+    height: 90px;
   }
 }
 
@@ -47,6 +63,12 @@
     padding-top: 20%;
 
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: center;
+    padding-top: 0;
+    height: 100%;
   }
 }
 
@@ -72,5 +94,12 @@
   @media (min-width: @tablet-width) {
     width: 25%;
     padding-left: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 185px;
+    padding-top: 60px;
+    padding-left: 43px;
+    height: 84px;
   }
 }

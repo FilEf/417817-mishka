@@ -15,6 +15,9 @@
     flex-wrap: wrap;
     align-items: flex-end;
   }
+  @media (min-width: @desktop-width) {
+    margin-top: -40px;
+  }
 }
 
 .good-sorts__title {
@@ -39,6 +42,8 @@
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+
+    margin-bottom: 205px;
   }
 }
 
@@ -61,14 +66,16 @@
 }
 
 .good-sorts__item {
-  height: 78px;
-  padding-top: 24px;
-  padding-left: 30px;
+  height: 83px;
+  padding-top: 20px;
+  padding-left: 22px;
 
   outline: 1px solid blue;
 
   @media (min-width: @tablet-width) {
     height: 92px;
+    padding-top: 24px;
+    padding-left: 30px;
 
     flex-grow: 1;
   }

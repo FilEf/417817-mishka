@@ -6,21 +6,25 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    height: 458px;
 
     display: flex;
 
-    padding: 0px 50px 0 50px;
+    height: 458px;
     margin-bottom: 69px;
+    padding: 0 50px 0 50px;
 
-    background: @color-light-grey url("../img/review@1x.jpg") no-repeat 0;
+    background: url("../img/review@1x.jpg") no-repeat;
 
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 70px 50px 102px 175px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    padding: 0 50px 68px 172px;
+
+    align-items: flex-start;
   }
 }
 
@@ -37,18 +41,31 @@
     font-size: 43px;
     font-weight: bold;
     line-height: 50px;
+
     margin-top: 77px;
     margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+
+    margin-top: 73px;
+    margin-bottom: 0;
   }
 }
 
 .opinions__write {
   @media (min-width: @tablet-width) {
+    width: 175px;
     max-height: 50px;
     margin-top: 79px;
-    width: 175px;
 
     order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 81px;
   }
 }
 
@@ -81,6 +98,9 @@
 
   @media (min-width: @desktop-width) {
     max-width: 790px;
+    margin: 0;
+    margin-left: 3px;
+    padding-bottom: 40px;
   }
 }
 
@@ -91,6 +111,10 @@
   margin: 0 0 10px 0;
 
   outline: 1px solid orange;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 3px;
+  }
 }
 
 .opinions__email {
@@ -99,6 +123,9 @@
   margin: 0 0 37px 0;
 
   outline: 1px solid orange;
+  @media (min-width: @desktop-width) {
+    padding-bottom: 18px;
+  }
 }
 
 .opinions__pagination {
