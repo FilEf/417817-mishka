@@ -12,8 +12,8 @@
   @media (min-width: @desktop-width) {
     position: relative;
 
-    padding: 69px 50px 57px 224px;
     margin-bottom: 50px;
+    padding: 69px 50px 57px 224px;
   }
 }
 
@@ -85,8 +85,6 @@
   min-height: 30px;
   margin-top: 28px;
 
-  outline: 1px solid blue;
-
   @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 30px;
@@ -111,14 +109,24 @@
 .contacts__type {
   min-width: 77px;
   margin: 0;
-
-  outline: 1px solid blue;
 }
 
 .contacts__data {
   margin: 0;
 
-  outline: 1px solid blue;
+  &--email {
+    cursor: pointer;
+
+    border-bottom: 1px solid @color-mint;
+
+    &:hover {
+      color: @color-mint;
+    }
+
+    &:active {
+      opacity: .3;
+    }
+  }
   @media (min-width: @desktop-width) {
     padding-top: 0;
   }

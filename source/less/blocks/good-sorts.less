@@ -52,6 +52,8 @@
   font-weight: bold;
   line-height: 24px;
 
+  width: 100%;
+
   outline: 1px solid green;
 
   .reset-list();
@@ -60,23 +62,21 @@
     display: flex;
 
     margin: 0 50px;
-
-    flex-grow: 1;
   }
 }
 
 .good-sorts__item {
-  height: 83px;
-  padding-top: 20px;
-  padding-left: 22px;
+  position: relative;
+
+  width: 100%;
 
   outline: 1px solid blue;
 
-  @media (min-width: @tablet-width) {
-    height: 92px;
-    padding-top: 24px;
-    padding-left: 30px;
+  &:hover {
+    bottom: 5px;
+  }
 
+  @media (min-width: @tablet-width) {
     flex-grow: 1;
   }
 }
@@ -89,17 +89,52 @@
   background-color: rgb(86, 195, 178);
 }
 
+.good-sorts__interior-icon {
+  position: absolute;
+  top: 23px;
+  right: 36px;
+
+  width: 40px;
+  height: 62px;
+
+  fill: rgb(59, 176, 157);
+}
+
+.good-sorts__toys-icon {
+  position: absolute;
+  top: 21px;
+  right: 27px;
+
+  width: 60px;
+  height: 60px;
+
+  fill: rgb(53, 169, 153);
+}
+
 .good-sorts__name {
   font-size: 20px;
   line-height: 30px;
 
   display: block;
+  display: block;
 
-  width: 130px;
+  height: 83px;
   margin-top: 3px;
   margin-left: 6px;
+  padding-top: 20px;
+  padding-left: 22px;
 
   text-decoration: none;
 
   color: @color-light-grey;
+
+  &:active {
+    opacity: .3;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 92px;
+    padding-top: 24px;
+    padding-left: 30px;
+  }
 }

@@ -4,8 +4,8 @@
   outline: 2px solid green;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
     margin-bottom: -2px;
+    padding: 0;
   }
 }
 
@@ -191,6 +191,8 @@
   font-weight: bold;
   line-height: 18px;
 
+  position: relative;
+
   display: block;
 
   height: 69px;
@@ -212,6 +214,51 @@
     align-items: flex-start;
   }
 }
+
+.filter input[type="radio"] {
+  display: none;
+}
+
+.filter input[type="radio"] + label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+}
+
+.filter input[type="radio"] + label::before {
+  position: absolute;
+  top: -6px;
+  left: -60px;
+
+  width: 38px;
+  height: 38px;
+
+  content: "";
+
+  border: 2px solid @color-charcoal;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 51px;
+    height: 51px;
+  }
+}
+
+.filter input[type="radio"]:hover + label::before {
+  border-color: @color-mint;
+}
+
+.filter input[type="radio"]:active + label::before {
+  border-color: @color-harp;
+}
+
+.filter input[type="radio"]:checked + label::before {
+  background-color: @color-mint;
+  text-shadow: 0 0 0 5px white;
+}
+
 
 .filter__input-list--radio .filter__input-item,
 .filter__input-list--checkbox .filter__input-item {

@@ -149,7 +149,7 @@
 
   height: 51px;
   padding-top: 28px;
-  padding-left: 45px;
+  padding-left: 75px;
 
   outline: 1px solid green;
 
@@ -228,7 +228,55 @@
 .main-nav__name {
   text-decoration: none;
 
-  color: rgb(0, 0, 0);
+  color: @color-black;
+}
+
+.main-nav__item a[href] {
+  &:hover {
+    .text-hover();
+  }
+
+  &:active {
+    .text-active();
+  }
+}
+
+.main-nav__search-icon {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+
+  width: 18px;
+  height: 18px;
+
+  fill: @color-thistle;
+
+  &:hover {
+    .icon-hover();
+  }
+
+  &:active {
+    .icon-active();
+  }
+}
+
+.main-nav__basket-icon {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+
+  width: 21px;
+  height: 18px;
+
+  fill: @color-thistle;
+
+  &:hover {
+    .icon-hover();
+  }
+
+  &:active {
+    .icon-active();
+  }
 }
 
 .main-nav__add-info {

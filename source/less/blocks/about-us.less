@@ -1,18 +1,18 @@
 .about-us {
-  padding: 33px 30px 27px 30px;
+  padding: 32px 30px 29px 30px;
 
   outline: 1px solid blue;
 
   @media (min-width: @tablet-width) {
     max-width: @tablet-width;
-    padding: 60px 50px 0 50px;
     margin-bottom: 25px;
+    padding: 60px 50px 0 50px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: @desktop-width;
-    padding: 72px 50px 0 222px;
     margin-bottom: 30px;
+    padding: 72px 50px 0 222px;
   }
 }
 
@@ -74,6 +74,8 @@
 }
 
 .about-us__item {
+  position: relative;
+
   height: 67px;
   margin: 0;
   padding-top: 56px;
@@ -113,5 +115,58 @@
 
   @media (min-width: @desktop-width) {
     width: 50%;
+  }
+}
+
+.about-us__feature-icon {
+  position: absolute;
+
+  fill: @color-mint;
+
+  &--eco {
+    top: 2px;
+    left: 7px;
+
+    width: 32px;
+    height: 37px;
+  }
+
+  &--price {
+    top: 2px;
+
+    width: 47px;
+    height: 27px;
+  }
+
+  &--like {
+    top: 8px;
+    left: 7px;
+
+    width: 34px;
+    height: 27px;
+  }
+
+  &--handmade {
+    top: 4px;
+    left: 4px;
+
+    width: 35px;
+    height: 34px;
+  }
+
+  &--homeland {
+    top: 7px;
+    left: -5px;
+
+    width: 55px;
+    height: 23px;
+  }
+
+  &--giftwrap {
+    top: 4px;
+    left: 3px;
+
+    width: 33px;
+    height: 32px;
   }
 }

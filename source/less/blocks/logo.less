@@ -6,6 +6,14 @@
 
   outline: 1px solid green;
 
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+
   @media (min-width: @tablet-width) {
     width: 320px;
     height: 90px;
@@ -20,6 +28,13 @@
 
     order: -1;
   }
+}
+
+.logo-link {
+  display: block;
+
+  width: 100%;
+  height: 100%;
 }
 
 .logo__img {

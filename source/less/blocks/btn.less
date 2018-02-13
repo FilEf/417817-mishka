@@ -10,10 +10,20 @@
   min-height: 52px;
   padding: 14px 0;
 
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 
-  color: rgb(68, 68, 68);
-  border: 2px solid rgb(68, 68, 68);
+  color: @color-charcoal;
+  border: 2px solid @color-charcoal;
+
+  &:hover {
+    color: @color-white;
+    background-color: @color-charcoal;
+  }
+
+  &:active {
+    color: @color-suva-grey;
+  }
 }

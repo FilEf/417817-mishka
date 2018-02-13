@@ -10,7 +10,7 @@
 .catalog__item {
   margin-bottom: 30px;
 
-  outline: 1px solid red;
+  border: 1px solid @color-rum-swizzle;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -28,6 +28,8 @@
 }
 
 .catalog__link-wrapper {
+  background-color: @color-rum-swizzle;
+
   @media (min-width: @tablet-width) {
     width: 61%;
   }
@@ -40,8 +42,6 @@
 
 .catalog__img {
   margin: 0 auto;
-
-  background-color: rgb(241, 241, 241);
 }
 
 .catalog__description {
@@ -50,9 +50,16 @@
   margin-top: 25px;
   padding: 0 30px;
 
-  outline: 1px solid red;
-
   flex-wrap: wrap;
+
+  &:hover {
+    .item-hover-shadow();
+  }
+
+  &:active {
+    .item-active-shadow();
+  }
+
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -74,7 +81,7 @@
 .catalog__title {
   text-decoration: none;
 
-  outline: 1px solid red;
+  color: @color-black;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -92,6 +99,14 @@
 
   margin: 0;
   padding-bottom: 4px;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -111,8 +126,6 @@
   margin: 0;
   padding-bottom: 19px;
 
-  outline: 1px solid red;
-
   @media (min-width: @tablet-width) {
     font-size: 15px;
 
@@ -128,9 +141,12 @@
 .catalog__order {
   display: flex;
 
+  width: 100%;
   margin: 0;
   padding-top: 21px;
   padding-bottom: 29px;
+
+  border-top: 1px solid @color-rum-swizzle;
 
   @media (min-width: @tablet-width) {
     height: 45px;
@@ -151,8 +167,6 @@
   width: 100%;
   margin: 0;
 
-  outline: 1px solid red;
-
   @media (min-width: @tablet-width) {
     font-size: 17px;
 
@@ -167,8 +181,29 @@
   }
 }
 
-.catalog__basket-icon {
+.catalog__basket {
+  position: relative;
+
   width: 35%;
 
   outline: 1px solid red;
+}
+
+.catalog__basket-icon {
+  position: absolute;
+  top: 2px;
+  right: -4px;
+
+  width: 21px;
+  height: 18px;
+
+  fill: @color-thistle;
+
+  &:hover {
+    .icon-hover();
+  }
+
+  &:active {
+    .icon-active();
+  }
 }

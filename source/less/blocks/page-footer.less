@@ -63,28 +63,58 @@
   @media (min-width: @tablet-width) {
     height: 70px;
     padding-top: 20%;
-
-    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     height: 100%;
     padding-top: 0;
-
-    justify-content: center;
   }
 }
 
 .page-footer__social-item {
+  position: relative;
+
   padding-right: 40px;
 
   outline: 1px solid green;
+
+  .text-hidden();
+}
+
+.page-footer__social-icon {
+  position: absolute;
+
+  &--inst {
+    top: 13px;
+    left: -12px;
+
+    width: 22px;
+    height: 21px;
+  }
+
+  &--fb {
+    top: 9px;
+    left: 11px;
+
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twit {
+    top: 14px;
+    right: -9px;
+
+    width: 23px;
+    height: 20px;
+  }
 }
 
 .page-footer__designed {
   font-size: 19px;
   font-weight: bold;
   line-height: 18px;
+
+  position: relative;
 
   height: 52px;
   padding-top: 28px;
@@ -105,4 +135,15 @@
     padding-top: 63px;
     padding-left: 43px;
   }
+}
+
+.page-footer__designed-icon {
+  position: absolute;
+  top: 22px;
+  right: 68px;
+
+  width: 27px;
+  height: 34px;
+
+  fill: @color-mint;
 }

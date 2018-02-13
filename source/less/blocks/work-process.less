@@ -4,6 +4,10 @@
 
   outline: 2px solid blue;
 
+  &:hover {
+    .item-hover-shadow();
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -27,6 +31,8 @@
   font-weight: bold;
   line-height: 24px;
 
+  position: relative;
+
   margin: 0;
   padding: 25px 0 25px 90px;
 
@@ -46,6 +52,17 @@
   }
 }
 
+.work-process__camera-icon {
+  position: absolute;
+  top: 28px;
+  left: 35px;
+
+  width: 32px;
+  height: 32px;
+
+  fill: @color-mint;
+}
+
 .work-process__img-video {
   position: relative;
 
@@ -53,6 +70,16 @@
   height: 150px;
 
   outline: 1px solid blue;
+
+  &:hover::before {
+    transform: scale(1.2);
+  }
+
+  &:active::before {
+    transform: scale(.8);
+
+    opacity: .3;
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -64,6 +91,21 @@
   @media (min-width: @desktop-width) {
     width: 682px;
   }
+}
+
+.work-process__img-video::before {
+  position: absolute;
+  top: 37px;
+  left: 80px;
+
+  width: 101px;
+  height: 77px;
+
+  content: "";
+  cursor: pointer;
+
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
 }
 
 .work-process__video {
