@@ -49,6 +49,8 @@
   margin: 0;
   margin-top: 9px;
   padding: 0;
+  border:none;
+  border-top: 2px solid @color-mint;
 
   &--single {
     margin-top: 0;
@@ -109,13 +111,13 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
+  padding-right: 20px;
 
   text-transform: uppercase;
+  color: @color-mint;
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 69px;
-
-    color: @color-mint;
 
     &--radio {
       top: 52px;
@@ -215,11 +217,11 @@
   }
 }
 
-.filter input[type="radio"] {
+.filter .filter__radio[type="radio"] {
   display: none;
 }
 
-.filter input[type="radio"] + label {
+.filter .filter__radio[type="radio"] + .filter__label {
   position: relative;
 
   display: block;
@@ -227,7 +229,7 @@
   cursor: pointer;
 }
 
-.filter input[type="radio"] + label::before {
+.filter .filter__radio[type="radio"] + .filter__label::before {
   position: absolute;
   top: -6px;
   left: -60px;
@@ -241,22 +243,28 @@
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
+    top: -16px;
+    left: -85px;
     width: 51px;
     height: 51px;
   }
 }
 
-.filter input[type="radio"]:hover + label::before {
+.filter .filter__radio[type="radio"]:hover + .filter__label::before {
   border-color: @color-mint;
 }
 
-.filter input[type="radio"]:active + label::before {
+.filter .filter__radio[type="radio"]:active + .filter__label::before {
   border-color: @color-harp;
 }
 
-.filter input[type="radio"]:checked + label::before {
+.filter .filter__radio[type="radio"]:checked + .filter__label::before {
   background-color: @color-mint;
-  text-shadow: 0 0 0 5px white;
+  box-shadow: inset 0 0 0 10px white;
+
+  @media (min-width: @tablet-width) {
+    box-shadow: inset 0 0 0 14px white;
+  }
 }
 
 
@@ -300,14 +308,106 @@
   }
 }
 
+.filter .filter__checkbox[type="checkbox"] {
+  display: none;
+}
+
+.filter .filter__checkbox[type="checkbox"] + .filter__label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+}
+
+.filter .filter__checkbox[type="checkbox"] + .filter__label::before {
+  position: absolute;
+  top: -11px;
+  left: -60px;
+
+  width: 38px;
+  height: 38px;
+
+  content: "";
+
+  border: 2px solid @color-charcoal;
+
+  @media (min-width: @tablet-width) {
+    top: -19px;
+    left: -85px;
+    width: 54px;
+    height: 54px;
+  }
+}
+
+.filter .filter__checkbox[type="checkbox"]:hover + .filter__label::before {
+  border-color: @color-mint;
+}
+
+.filter .filter__checkbox[type="checkbox"]:active + .filter__label::before {
+  border-color: @color-harp;
+}
+
+.filter .filter__checkbox[type="checkbox"]:checked + .filter__label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-size: 33px 22px;
+  background-repeat: no-repeat;
+  background-position: 3px 7px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 45px 30px;
+    background-position: 5px 10px;
+  }
+}
+
 .filter__input-list--textfield .filter__input-item {
   @media (min-width: @desktop-width) {
     width: 700px;
   }
 }
 
-.filter__input-list--single .filter__input-item {
+.filter__icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  fill-opacity: .3;
+
+  &:hover {
+    fill-opacity: 1;
+    fill: @color-mint;
+  }
+}
+
+.filter__field {
+  width: 97%;
+  height: 42px;
+  padding-left: 10px; 
+  border: none;
+  border-bottom: 2px solid @color-black;
+
+  &--single {
+    position: relative;
+    width: 96%;
+
+    @media (min-width: @tablet-width) {
+      width: 99%;
+    }
+  }
+}
+
+.filter__input-item--single {
   height: 52px;
+
+  &:hover {
+    .filter__icon {
+      fill-opacity: 1;
+      fill: @color-mint;
+    }
+
+    .filter__field {
+      border-color: @color-mint;
+    }
+  }
 
   @media (min-width: @desktop-width) {
     width: 700px;
@@ -327,16 +427,26 @@
 }
 
 .filter__textarea {
-  width: 100%;
+  width: 96%;
   height: 100%;
   padding: 0;
+  padding-left: 10px;
+
+  border-color: @color-black;
+  &:hover {
+    border-color: @color-mint;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 99%;
+  }
 }
 
 .filter__label {
   display: block;
 
   margin-right: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .filter__btn-note {
