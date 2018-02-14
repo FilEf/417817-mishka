@@ -115,6 +115,7 @@
   text-transform: uppercase;
 
   color: @color-mint;
+
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 69px;
@@ -185,33 +186,6 @@
     margin-left: 113px;
 
     justify-content: flex-start;
-  }
-}
-
-.filter__input-item {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 18px;
-
-  position: relative;
-
-  display: block;
-
-  height: 69px;
-  margin-bottom: 22px;
-
-  &--single {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: @tablet-width) {
-    font-size: 19px;
-
-    display: flex;
-
-    margin-bottom: 6px;
-
-    align-items: flex-start;
   }
 }
 
@@ -302,7 +276,6 @@
 
   @media (min-width: @desktop-width) {
     width: 155px;
-    margin-right: 23px;
     margin-right: 26px;
   }
 }
@@ -369,10 +342,9 @@
 .filter__icon {
   position: absolute;
   top: 6px;
-  right: 0;
   right: 7px;
 
-  fill-opacity: .3;
+  fill-opacity: 0.3;
 
   &:hover {
     fill-opacity: 1;
@@ -421,44 +393,85 @@
 /*Можно так сделать? Автопрефиксер сам не проставляет*/
 
 .filter__field::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .filter__field::-moz-placeholder {
-  color: rgba(0, 0, 0, .3);/* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.3);/* Firefox 19+ */
 }
 
 .filter__field:-moz-placeholder {
-  color: rgba(0, 0, 0, .3);/* Firefox 18- */
+  color: rgba(0, 0, 0, 0.3);/* Firefox 18- */
 }
 
 .filter__field:-ms-input-placeholder {
-  color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, 0.3);
 }
 /*------------------------------------------------------*/
 
-.filter__input-item--single {
-  height: 52px;
 
-  &:hover {
-    .filter__icon {
-      fill-opacity: 1;
-      fill: @color-mint;
-    }
+  &--single {
 
-    .filter__field {
-      border-color: @color-mint;
-    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+
+    display: flex;
+
+    margin-bottom: 6px;
+
+    align-items: flex-start;
+  }
+}
+
+.filter__input-item {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+
+  position: relative;
+
+  display: block;
+
+  height: 69px;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+
+    display: flex;
+
+    margin-bottom: 6px;
+
+    align-items: flex-start;
   }
 
   @media (min-width: @desktop-width) {
     width: 700px;
+  }
+
+  &--single {
+    margin-bottom: 0;
+    height: 52px;
+
+    &:hover {
+      .filter__icon {
+        fill-opacity: 1;
+        fill: @color-mint;
+      }
+
+      .filter__field {
+        border-color: @color-mint;
+      }
+    }
   }
 }
 
 .filter__input-item--textarea {
   height: 140px;
   margin-bottom: 15px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 10px;
   }
@@ -476,6 +489,7 @@
   padding-left: 14px;
 
   border-color: @color-black;
+
   &:hover {
     border-color: @color-mint;
   }
