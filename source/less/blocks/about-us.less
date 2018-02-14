@@ -1,16 +1,15 @@
 .about-us {
-  padding: 30px 0 53px 0;
-
-  outline: 1px solid blue;
+  padding: 33px 30px 28px 30px;
 
   @media (min-width: @tablet-width) {
-    max-width: @tablet-width;
-    padding: 60px 50px 80px 50px;
+    margin-bottom: 25px;
+    padding: 67px 50px 0 50px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: @desktop-width;
-    padding: 68px 50px 90px 175px;
+    margin-bottom: 27px;
+    padding: 81px 50px 0 225px;
   }
 }
 
@@ -20,15 +19,17 @@
   line-height: 30px;
 
   margin: 0;
-  padding-bottom: 28px;
-
-  outline: 1px solid blue;
+  margin-bottom: 31px;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
 
     display: flex;
+
+    margin-bottom: 50px;
+    margin-left: -4px;
 
     align-content: center;
     flex-wrap: wrap;
@@ -37,8 +38,6 @@
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
-
-    display: flex;
 
     width: 65%;
 
@@ -50,8 +49,6 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
-
-  outline: 1px solid blue;
 
   .reset-list();
 
@@ -65,18 +62,22 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 65%;
+    width: 80%;
   }
 }
 
 .about-us__item {
-  height: 61px;
-  padding: 85px 0 27px 0;
+  position: relative;
 
-  outline: 1px solid blue;
+  height: 67px;
+  margin: 0;
+  padding-top: 56px;
+  padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
     width: 50%;
+    height: 103px;
+    padding-top: 52px;
 
     &--eco {
       order: 0;
@@ -105,5 +106,87 @@
 
   @media (min-width: @desktop-width) {
     width: 50%;
+    padding-top: 53px;
+  }
+}
+
+.about-us__feature-icon {
+  position: absolute;
+
+  fill: @color-mint;
+
+  &--eco {
+    top: 2px;
+    left: 7px;
+
+    width: 32px;
+    height: 37px;
+
+    @media (min-width: @tablet-width) {
+      top: -1px;
+      left: 9px;
+    }
+  }
+
+  &--price {
+    top: 2px;
+
+    width: 47px;
+    height: 27px;
+
+    @media (min-width: @tablet-width) {
+      top: -1px;
+      left: 1px;
+    }
+  }
+
+  &--like {
+    top: 7px;
+    left: 7px;
+
+    width: 34px;
+    height: 27px;
+
+    @media (min-width: @tablet-width) {
+      top: 6px;
+      left: 8px;
+    }
+  }
+
+  &--handmade {
+    top: 4px;
+    left: 4px;
+
+    width: 35px;
+    height: 34px;
+
+    @media (min-width: @tablet-width) {
+      top: 2px;
+    }
+  }
+
+  &--homeland {
+    top: 5px;
+    left: -6px;
+
+    width: 55px;
+    height: 23px;
+
+    @media (min-width: @tablet-width) {
+      top: 3px;
+      left: -5px;
+    }
+  }
+
+  &--giftwrap {
+    top: 4px;
+    left: 3px;
+
+    width: 33px;
+    height: 32px;
+
+    @media (min-width: @tablet-width) {
+      top: 1px;
+    }
   }
 }

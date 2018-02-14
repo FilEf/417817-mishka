@@ -1,14 +1,14 @@
 .hit-product {
-  text-align: left;
+  padding-bottom: 36px;
 
-  outline: 1px solid red;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 40px 50px 75px 50px;
+    padding: 81px 50px 75px 50px;
   }
 }
 
@@ -23,15 +23,18 @@
     display: flex;
 
     width: 100%;
-    margin-top: 34px;
-    margin-bottom: 50px;
+    margin-top: 47px;
+    margin-bottom: 49px;
+    margin-left: -3px;
 
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row-reverse;
+
+    margin-top: 44px;
 
     justify-content: flex-end;
   }
@@ -42,10 +45,9 @@
   font-weight: bold;
   line-height: 30px;
 
-  margin: 0;
-  padding-bottom: 11px;
-
-  outline: 1px solid red;
+  margin-top: 26px;
+  margin-bottom: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
@@ -61,7 +63,6 @@
     z-index: 100;
 
     min-width: 650px;
-    margin: 0;
   }
 }
 
@@ -71,22 +72,28 @@
   line-height: 20px;
 
   margin: 0;
+  padding-top: 6px;
   padding-bottom: 22px;
 
   text-transform: uppercase;
 
   color: rgb(99, 209, 187);
-  outline: 1px solid red;
 
   @media (min-width: @tablet-width) {
-    width: 70px;
+    line-height: 17px;
+
+    width: 120px;
     margin: 0;
+    padding-top: 12px;
+    padding-bottom: 0;
 
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 53px;
+    margin-right: 29px;
+    margin-left: 25px;
+    padding-top: 15px;
   }
 }
 
@@ -97,7 +104,7 @@
 
   @media (min-width: @desktop-width) {
     width: 292px;
-    padding-left: 123px;
+    padding-left: 175px;
   }
 }
 
@@ -106,9 +113,7 @@
   line-height: 24px;
 
   margin: 0;
-  padding-bottom: 22px;
-
-  outline: 1px solid red;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
@@ -122,7 +127,7 @@
     font-size: 17px;
     line-height: 30px;
 
-    margin-bottom: 68px;
+    margin-bottom: 48px;
     padding: 0;
   }
 }
@@ -133,41 +138,43 @@
 
   margin-bottom: 30px;
 
-  outline: 1px solid red;
-
   .reset-list();
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 68px;
+    margin-bottom: 110px;
   }
 }
 
 .hit-product__spec-item {
-  padding: 12px 0 12px 0;
+  display: flex;
 
-  outline: 1px solid red;
+  padding: 10px 0;
+}
+
+.hit-product__spec-name {
+  width: 97px;
 }
 
 .hit-product__img {
+  margin-top: 29px;
   margin-bottom: 22px;
 
-  outline: 1px solid red;
-  background-color: @color-light-grey;
+  background-color: @color-dark-grey;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 110px;
+    top: 78px;
     right: 0;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     z-index: 90;
-    top: -50px;
+    top: -83px;
     right: 0;
   }
 }
@@ -191,16 +198,17 @@
 
   display: block;
 
+  margin-bottom: 25px;
+
   text-align: center;
 
   color: rgb(68, 68, 68);
-  outline: 1px solid red;
 
   @media (min-width: @tablet-width) {
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 24px;
 
-    margin: 0 0 35px 0;
+    margin: 0 0 34px 0;
   }
 }
 

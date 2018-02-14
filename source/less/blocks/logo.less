@@ -1,20 +1,21 @@
 .logo {
-  width: 258px;
+  position: relative;
+
+  width: auto;
   height: 79px;
 
   text-align: center;
 
-  outline: 1px solid green;
-
   @media (min-width: @tablet-width) {
-    width: 318px;
+    width: 320px;
     height: 90px;
 
     order: -2;
   }
 
   @media (min-width: @desktop-width) {
-    height: 90px;
+    width: 323px;
+    height: 88px;
 
     text-align: center;
 
@@ -22,11 +23,26 @@
   }
 }
 
+.logo-link {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
 .logo__img {
   margin: 0 auto;
   padding: 22px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 22px 0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
   }
 }

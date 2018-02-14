@@ -6,9 +6,18 @@
   @media (min-width: @tablet-width) {
     display: flex;
 
+    height: 144px;
     padding: 0 50px 0;
 
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 141px;
+    margin-top: 0;
+    padding: 0;
+
+    align-items: stretch;
   }
 }
 
@@ -16,42 +25,155 @@
   display: none;
 
   @media (min-width: @tablet-width) {
+    position: relative;
+
     display: block;
 
-    width: 25%;
+    width: 16%;
 
     text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 90px;
+    padding-top: 54px;
+  }
+}
+
+.page-footer__logo-icon {
+  &:hover {
+    fill: @color-mint;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 50px;
   }
 }
 
 .page-footer__social {
   @media (min-width: @tablet-width) {
-    width: 200px;
-    height: 100px;
+    width: 40%;
+    height: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 143px;
   }
 }
 
 .page-footer__social-list {
   display: flex;
 
-  padding: 26px 0;
+  height: 80px;
 
-  outline: 1px solid red;
-
+  justify-content: center;
   .reset-list();
 
   @media (min-width: @tablet-width) {
-    padding-top: 22%;
+    height: 143px;
 
-    justify-content: space-between;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 85px;
   }
 }
 
 .page-footer__social-item {
-  width: 24px;
-  height: 30px;
+  position: relative;
 
-  outline: 1px solid green;
+  width: 40px;
+  margin-right: 15px;
+
+  .text-hidden();
+
+  &:hover .page-footer__social-icon {
+    fill: @color-mint;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50px;
+  }
+}
+
+.page-footer__social-link {
+  height: 100%;
+}
+
+.page-footer__social-icon {
+  position: absolute;
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+
+  &--inst {
+    top: 29px;
+    left: 9px;
+
+    width: 22px;
+    height: 21px;
+
+    @media (min-width: @tablet-width) {
+      top: 64px;
+      left: 27px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 61px;
+      left: 25px;
+    }
+  }
+
+  &--fb {
+    top: 24px;
+    left: 17px;
+
+    width: 15px;
+    height: 28px;
+
+    @media (min-width: @tablet-width) {
+      top: 58px;
+      left: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 55px;
+      left: 23px;
+    }
+  }
+
+  &--twit {
+    top: 29px;
+    right: 0;
+
+    width: 23px;
+    height: 20px;
+
+    @media (min-width: @tablet-width) {
+      top: 64px;
+      left: 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 61px;
+      left: 13px;
+    }
+  }
 }
 
 .page-footer__designed {
@@ -59,13 +181,56 @@
   font-weight: bold;
   line-height: 18px;
 
-  padding: 26px 0;
+  position: relative;
+
+  height: 52px;
+  padding-top: 28px;
+  padding-left: 69px;
 
   text-decoration: none;
 
-  outline: 1px solid red;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .page-footer__designed-icon {
+    opacity: 1;
+  }
 
   @media (min-width: @tablet-width) {
-    width: 25%;
+    width: 20%;
+    padding-top: 64px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 185px;
+    height: 81px;
+    padding-top: 62px;
+    padding-left: 43px;
+  }
+}
+
+.page-footer__designed-icon {
+  position: absolute;
+  top: 22px;
+  right: 68px;
+
+  width: 27px;
+  height: 34px;
+
+  opacity: 0.6;
+
+  fill: @color-mint;
+
+  @media (min-width: @tablet-width) {
+    top: 58px;
+    right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 55px;
+    right: 50px;
   }
 }

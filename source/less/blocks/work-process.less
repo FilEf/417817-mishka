@@ -1,17 +1,26 @@
 .work-process {
-  padding-top: 32px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
 
-  outline: 2px solid blue;
+  &:hover {
+    .item-hover-shadow();
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 65px;
+    padding-bottom: 44px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
     max-height: 455px;
+    margin-bottom: 107px;
+    padding-bottom: 0;
+
+    border: 1px solid @color-rum-swizzle;
 
     flex-wrap: wrap;
   }
@@ -22,17 +31,38 @@
   font-weight: bold;
   line-height: 24px;
 
+  position: relative;
+
   margin: 0;
-  padding: 30px 12px 30px 60px;
+  padding: 25px 0 25px 90px;
 
-  outline: 1px solid blue;
-
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 20px;
 
+    padding: 38px 0 8px 106px;
+  }
+
+  @media (min-width: @desktop-width) {
     width: 230px;
-    margin-top: 100px;
-    padding-left: 30px;
+    height: 60px;
+    margin-top: 47px;
+    padding: 50px 0 8px 76px;
+  }
+}
+
+.work-process__camera-icon {
+  position: absolute;
+  top: 28px;
+  left: 35px;
+
+  width: 32px;
+  height: 32px;
+
+  fill: @color-mint;
+
+  @media (min-width: @desktop-width) {
+    top: -3px;
+    left: 75px;
   }
 }
 
@@ -40,8 +70,17 @@
   position: relative;
 
   width: 100%;
+  height: 150px;
 
-  outline: 1px solid blue;
+  &:hover::before {
+    transform: scale(1.2);
+  }
+
+  &:active::before {
+    transform: scale(0.8);
+
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -55,6 +94,21 @@
   }
 }
 
+.work-process__img-video::before {
+  position: absolute;
+  top: 37px;
+  left: 80px;
+
+  width: 101px;
+  height: 77px;
+
+  content: "";
+  cursor: pointer;
+
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+}
+
 .work-process__video {
   position: absolute;
   top: 0;
@@ -65,15 +119,19 @@
   font-size: 13px;
   line-height: 24px;
 
-  padding: 0 35px;
+  margin: 0;
+  padding: 26px 35px;
 
-  outline: 1px solid blue;
-
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 15px;
     line-height: 30px;
 
+    padding: 23px 35px 36px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
     width: 250px;
+    padding: 13px 35px 46px 76px;
   }
 }
 
@@ -85,11 +143,13 @@
     font-size: 17px;
     line-height: 16px;
 
-    width: 598px;
+    width: 584px;
+    margin: 0 42px;
+    padding-top: 17px;
   }
 
   @media (min-width: @desktop-width) {
     width: 230px;
-    margin-left: 30px;
+    margin-left: 76px;
   }
 }
