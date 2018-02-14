@@ -10,11 +10,10 @@
     padding: 0 50px 0;
 
     justify-content: space-between;
-    align-items: baseline;
   }
 
   @media (min-width: @desktop-width) {
-    height: 144px;
+    height: 141px;
     margin-top: 0;
     padding: 0;
 
@@ -26,9 +25,11 @@
   display: none;
 
   @media (min-width: @tablet-width) {
+    position: relative;
+
     display: block;
 
-    width: 25%;
+    width: 16%;
 
     text-align: left;
   }
@@ -47,16 +48,25 @@
   &:active {
     fill-opacity: .3;
   }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 50px;
+  }
 }
 
 .page-footer__social {
   @media (min-width: @tablet-width) {
-    width: 50%;
+    width: 40%;
     height: 80px;
   }
+
   @media (min-width: @desktop-width) {
-    height: 90px;
-    padding-top: 54px;
+    height: 143px;
   }
 }
 
@@ -65,40 +75,43 @@
 
   height: 80px;
 
-  outline: 1px solid red;
-
   justify-content: center;
   .reset-list();
 
   @media (min-width: @tablet-width) {
-    height: 70px;
-    padding-top: 20%;
+    height: 143px;
+
+    justify-content: flex-end;
   }
 
   @media (min-width: @desktop-width) {
-    height: 100%;
-    padding-top: 0;
+    padding-right: 85px;
   }
 }
 
 .page-footer__social-item {
   position: relative;
 
-  margin-right: 20px;
-
-  outline: 1px solid green;
+  width: 40px;
+  margin-right: 15px;
 
   .text-hidden();
-  width: 25px;
 
-  &:hover .page-footer__social-icon{
-      fill: @color-mint;
-  } 
+  &:hover .page-footer__social-icon {
+    fill: @color-mint;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50px;
+  }
 }
 
 .page-footer__social-link {
   height: 100%;
-
 }
 
 .page-footer__social-icon {
@@ -109,27 +122,57 @@
   }
 
   &--inst {
-    top: 25px;
-    left: 2px;
+    top: 29px;
+    left: 9px;
 
     width: 22px;
     height: 21px;
+
+    @media (min-width: @tablet-width) {
+      top: 64px;
+      left: 27px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 61px;
+      left: 25px;
+    }
   }
 
   &--fb {
-    top: 20px;
-    left: 5px;
+    top: 24px;
+    left: 17px;
 
     width: 15px;
     height: 28px;
+
+    @media (min-width: @tablet-width) {
+      top: 58px;
+      left: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 55px;
+      left: 23px;
+    }
   }
 
   &--twit {
-    top: 25px;
-    right: 0px;
+    top: 29px;
+    right: 0;
 
     width: 23px;
     height: 20px;
+
+    @media (min-width: @tablet-width) {
+      top: 64px;
+      left: 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 61px;
+      left: 13px;
+    }
   }
 }
 
@@ -156,14 +199,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 25%;
-    padding-left: 33px;
+    width: 20%;
+    padding-top: 64px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 185px;
     height: 81px;
-    padding-top: 63px;
+    padding-top: 62px;
     padding-left: 43px;
   }
 }
@@ -176,16 +220,17 @@
   width: 27px;
   height: 34px;
 
-  fill: @color-mint;
   opacity: .6;
 
+  fill: @color-mint;
+
   @media (min-width: @tablet-width) {
-    top: 25px;
-    right: 0px;
+    top: 58px;
+    right: 0;
   }
 
   @media (min-width: @desktop-width) {
-    top: 62px;
+    top: 55px;
     right: 50px;
   }
 }

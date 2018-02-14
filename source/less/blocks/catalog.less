@@ -8,20 +8,20 @@
 }
 
 .catalog__item {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   border: 1px solid @color-rum-swizzle;
 
   @media (min-width: @tablet-width) {
     display: flex;
 
-    height: 334px;
+    height: 332px;
     margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
     width: 30%;
-    height: 659px;
+    height: 655px;
 
     flex-wrap: wrap;
   }
@@ -67,7 +67,7 @@
 
     width: 50%;
     margin-top: 0;
-    padding-left: 26px;
+    padding-left: 28px;
   }
 
   @media (min-width: @desktop-width) {
@@ -79,6 +79,8 @@
 }
 
 .catalog__title {
+  margin-left: -3px;
+
   text-decoration: none;
 
   color: @color-black;
@@ -111,9 +113,10 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
 
-    padding-top: 10%;
+    padding-top: 25px;
   }
   @media (min-width: @desktop-width) {
+    padding-top: 21px;
     padding-bottom: 0;
   }
 }
@@ -124,6 +127,7 @@
 
   width: 100%;
   margin: 0;
+  margin-left: -3px;
   padding-bottom: 19px;
 
   @media (min-width: @tablet-width) {
@@ -132,7 +136,8 @@
     flex-grow: 1;
   }
   @media (min-width: @desktop-width) {
-    padding-bottom: 0;
+    padding: 0;
+    padding-top: 5px;
 
     flex-grow: 1;
   }
@@ -155,6 +160,7 @@
 
   @media (min-width: @desktop-width) {
     height: 73px;
+    padding-top: 5px;
     padding-bottom: 0;
   }
 }
@@ -166,6 +172,7 @@
 
   width: 100%;
   margin: 0;
+  margin-left: -3px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
@@ -176,7 +183,7 @@
 
   @media (min-width: @desktop-width) {
     height: 70%;
-    padding-top: 22px;
+    padding-top: 19px;
     padding-left: 0;
   }
 }
@@ -185,8 +192,6 @@
   position: relative;
 
   width: 35%;
-
-  outline: 1px solid red;
 }
 
 .catalog__basket-icon {
@@ -205,5 +210,14 @@
 
   &:active {
     .icon-active();
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 25px;
+    right: 2px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 20px;
   }
 }

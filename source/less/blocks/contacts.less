@@ -1,13 +1,10 @@
 .contacts {
   position: relative;
-  padding: 40px 0 39px 0;
 
-  outline: 1px solid blue;
+  padding: 41px 0 39px 0;
 
   @media (min-width: @tablet-width) {
     padding: 61px 0 57px 0;
-
-    outline: 1px solid blue;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,19 +17,24 @@
 
 .contacts::before {
   position: absolute;
-  content: "";
+
+  display: none;
+
   width: 47px;
   height: 82px;
+
+  content: "";
+
   background-image: url("../img/icon-flag.svg");
-  display: none;
   @media (min-width: @tablet-width) {
+    top: 61px;
+    right: 53px;
+
     display: block;
-    top: 60px;
-    right: 50px;
   }
   @media (min-width: @desktop-width) {
-  	top: 140px;
-    left: 120px;
+    top: 131px;
+    left: 114px;
   }
 }
 
@@ -47,7 +49,6 @@
     width: 302px;
     margin-top: 56px;
     padding: 0;
-
   }
 }
 
@@ -58,10 +59,7 @@
   line-height: 30px;
 
   margin: 0;
-  margin-bottom: 27px;
   padding: 0;
-
-  outline: 1px solid blue;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
@@ -69,6 +67,7 @@
 
     height: 70px;
     margin-bottom: 28px;
+    margin-left: -4px;
     padding-top: 15px;
   }
 
@@ -82,13 +81,12 @@
   font-size: 15px;
   line-height: 30px;
 
-  outline: 1px solid blue;
-
   .reset-list();
 
   @media (min-width: @tablet-width) {
     display: flex;
 
+    align-items: flex-start;
     justify-content: space-between;
   }
 
@@ -103,7 +101,8 @@
   display: flex;
 
   min-height: 30px;
-  margin-top: 28px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
@@ -154,8 +153,6 @@
 
 .contacts__maps {
   position: relative;
-
-  outline: 1px solid blue;
 
   @media (min-width: @desktop-width) {
     position: absolute;

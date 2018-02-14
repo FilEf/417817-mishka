@@ -1,6 +1,5 @@
 .good-sorts {
-  outline: 1px solid orange;
-  background: @color-light-grey url("../img/hero-mobile@1x.jpg") no-repeat center -20px;
+  background: @color-light-grey url("../img/hero-mobile@1x.jpg") no-repeat center -16px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -26,7 +25,7 @@
   line-height: 30px;
 
   margin: 0 0 123px 0;
-  padding: 70px 30px 0 30px;
+  padding: 72px 30px 0 30px;
 
   text-align: center;
 
@@ -43,7 +42,7 @@
     font-size: 53px;
     line-height: 57px;
 
-    margin-bottom: 205px;
+    margin-bottom: 208px;
   }
 }
 
@@ -53,8 +52,6 @@
   line-height: 24px;
 
   width: 100%;
-
-  outline: 1px solid green;
 
   .reset-list();
 
@@ -69,8 +66,6 @@
   position: relative;
 
   width: 100%;
-
-  outline: 1px solid blue;
 
   &:hover {
     bottom: 5px;
@@ -98,6 +93,10 @@
   height: 62px;
 
   fill: rgb(59, 176, 157);
+
+  @media (min-width: @tablet-width) {
+    top: 30px;
+  }
 }
 
 .good-sorts__toys-icon {
@@ -109,20 +108,22 @@
   height: 60px;
 
   fill: rgb(53, 169, 153);
+
+  @media (min-width: @tablet-width) {
+    top: 32px;
+    right: 34px;
+  }
 }
 
 .good-sorts__name {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 19px;
+  line-height: 24px;
 
   display: block;
-  display: block;
 
-  height: 83px;
-  margin-top: 3px;
-  margin-left: 6px;
-  padding-top: 20px;
-  padding-left: 22px;
+  height: 78px;
+  padding-top: 25px;
+  padding-left: 27px;
 
   text-decoration: none;
 
@@ -133,8 +134,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    height: 92px;
-    padding-top: 24px;
-    padding-left: 30px;
+    font-size: 20px;
+    line-height: 30px;
+
+    height: 89px;
+    padding-top: 28px;
+    padding-left: 35px;
   }
 }
