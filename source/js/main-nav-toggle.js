@@ -30,5 +30,3 @@ navToggle.addEventListener('click',function() {
     }
   }
 });
-
-

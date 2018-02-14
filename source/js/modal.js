@@ -23,4 +23,3 @@ close.addEventListener("click", function(event) {
   writeus.classList.remove("modal_show");
   overlay.classList.remove("modal_overlay_show");
 });
-
