@@ -381,15 +381,18 @@
     width: 96%;
 
     @media (min-width: @tablet-width) {
-      align-items: flex-start;
-      margin-bottom: 6px;
-      display: flex;
       font-size: 19px;
+
+      display: flex;
+
       width: 99%;
       margin-top: 5px;
+      margin-bottom: 6px;
       padding-left: 15px;
 
       background-color: @color-dark-grey;
+
+      align-items: flex-start;
     }
   }
 }
@@ -440,8 +443,8 @@
   }
 
   &--single {
-    margin-bottom: 0;
     height: 52px;
+    margin-bottom: 0;
 
     &:hover {
       .filter__icon {
