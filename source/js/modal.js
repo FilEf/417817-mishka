@@ -1,25 +1,30 @@
-var link = document.querySelector(".make-order-btn");
-var overlay = document.querySelector(".modal_overlay");
-var writeus = document.querySelector(".modal");
-var form = writeus.querySelector("form");
-var close = document.querySelector(".modal_overlay")
+var link = document.querySelectorAll(".make-order-btn");
+var overlay = document.querySelector(".modal__overlay");
+var makeOrder = document.querySelector(".modal");
+var form = makeOrder.querySelector("form");
+var close = document.querySelector(".modal__overlay");
+var size = makeOrder.querySelector("[name=size]");
+var storageName = localStorage.getItem("name");
 
-var size = writeus.querySelector("[name=size]");
-
-var storage_name = localStorage.getItem("name");
-
-link.addEventListener("click", function(event) {
-  event.preventDefault();
-  overlay.classList.add("modal_overlay_show");
-  writeus.classList.add("modal_show");
-
-  if(storage_name) {
-  name.value = storage_name;
+for (var i = 0; i < link.length; i++)
+{
+  link[i].addEventListener(
+    "click", function(event)
+    {
+      event.preventDefault();
+      overlay.classList.add("modal__overlay--show");
+      makeOrder.classList.add("modal--show");
+    });
   }
-});
+      if(storageName)
+      {
+        name.value = storageName;
+      }
 
-close.addEventListener("click", function(event) {
-  event.preventDefault();
-  writeus.classList.remove("modal_show");
-  overlay.classList.remove("modal_overlay_show");
-});
+close.addEventListener(
+  "click", function(event)
+  {
+    event.preventDefault();
+    makeOrder.classList.remove("modal--show");
+    overlay.classList.remove("modal__overlay--show");
+  });

@@ -9,7 +9,6 @@
 
   text-align: center;
 
-  outline: 1px solid red;
   background-color: rgb(241, 241, 241);
 
   @media (min-width: @tablet-width) {
@@ -31,39 +30,5 @@
     margin-top: -41px;
     margin-bottom: 128px;
     padding-bottom: 55px;
-  }
-}
-
-.page-main__title::before {
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    height: 10px;
-
-    content: "";
-
-    background-image: radial-gradient(circle at 10px -4px, transparent 12px, white 13px);
-    background-repeat: repeat;
-    background-size: 20px 20px;
-  }
-}
-
-.page-main__title::after {
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    height: 15px;
-
-    content: "";
-
-    background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
-    background-repeat: repeat;
-    background-size: 40px 20px;
   }
 }
