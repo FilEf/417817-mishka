@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Мишка: Каталог</title>
   </head>
   <body class="screen-width">
@@ -62,6 +64,9 @@
         <section class="catalog__item">
           <a class="catalog__link-wrapper" href="#">
             <picture>
+              <source class="catalog__img" type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+              <source class="catalog__img" type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+              <source class="catalog__img" type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
               <source class="catalog__img" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
               <source class="catalog__img" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
               <img class="catalog__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик" width="260" height="195">
@@ -84,6 +89,9 @@
         <section class="catalog__item">
           <a class="catalog__link-wrapper" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
               <source class="catalog__img" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
               <source class="catalog__img" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
               <img class="catalog__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья" width="260" height="195">
@@ -106,6 +114,9 @@
         <section class="catalog__item">
           <a class="catalog__link-wrapper" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
               <source class="catalog__img" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
               <source class="catalog__img" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
               <img class="catalog__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек" width="260" height="195">
@@ -132,6 +143,9 @@
           <div class="work-process__img-video">
             <div class="work-process__img">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
                 <source class="video__img" media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
                 <source class="video__img" media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
                 <img class="video__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс производства">

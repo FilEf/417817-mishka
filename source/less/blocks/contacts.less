@@ -158,8 +158,32 @@
 .contacts__maps {
   position: relative;
 
+  &:after {
+    position: absolute;
+    top: 144px;
+    left: 139px;
+
+    width: 67px;
+    height: 100px;
+
+    content: "";
+
+    background-image: url("../img/icon-map-pin.svg");
+
+    @media (min-width: @tablet-width) {
+      top: 139px;
+      left: 364px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 148px;
+      left: 240px;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     position: absolute;
+    z-index: 300;
     top: 69px;
     right: 50px;
 
@@ -174,6 +198,7 @@
 
 iframe.contacts__map-item {
   position: absolute;
+  z-index: 500;
   top: 0;
   left: 0;
 
