@@ -397,24 +397,9 @@
   }
 }
 
-/*Можно так сделать? Автопрефиксер сам не проставляет*/
-
-.filter__field::-webkit-input-placeholder {
+.filter__field::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-
-.filter__field::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3);/* Firefox 19+ */
-}
-
-.filter__field:-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3);/* Firefox 18- */
-}
-
-.filter__field:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-/*------------------------------------------------------*/
 
 .filter__input-item {
   font-size: 17px;
@@ -427,6 +412,17 @@
 
   height: 69px;
   margin-bottom: 22px;
+
+  &:hover {
+    .filter__icon {
+      fill-opacity: 1;
+      fill: @color-mint;
+    }
+
+    .filter__field {
+      border-color: @color-mint;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 19px;
@@ -445,17 +441,6 @@
   &--single {
     height: 52px;
     margin-bottom: 0;
-
-    &:hover {
-      .filter__icon {
-        fill-opacity: 1;
-        fill: @color-mint;
-      }
-
-      .filter__field {
-        border-color: @color-mint;
-      }
-    }
   }
 }
 

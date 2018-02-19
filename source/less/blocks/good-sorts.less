@@ -33,7 +33,7 @@
     &::after {
       position: absolute;
       z-index: 200;
-      bottom: -5px;
+      bottom: -4px;
       left: 0;
 
       width: 100%;
@@ -109,12 +109,12 @@
 
   width: 100%;
 
-  &:hover {
-    bottom: 5px;
-  }
-
   @media (min-width: @tablet-width) {
     flex-grow: 1;
+
+    &:hover {
+    bottom: 5px;
+    }
   }
 }
 
