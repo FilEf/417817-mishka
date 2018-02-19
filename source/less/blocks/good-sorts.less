@@ -45,6 +45,8 @@
       background-size: 100%;
 
       @media (min-width: @desktop-width) {
+        bottom: -5px;
+
         height: 25px;
       }
     }
@@ -67,7 +69,7 @@
   line-height: 30px;
 
   margin: 0 0 123px 0;
-  padding: 72px 30px 0 30px;
+  padding: 70px 30px 0 30px;
 
   text-align: center;
 
@@ -84,7 +86,7 @@
     font-size: 53px;
     line-height: 57px;
 
-    margin-bottom: 357px;
+    margin-bottom: 359px;
   }
 }
 
@@ -110,10 +112,12 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
+    min-height: 119px;
+
     flex-grow: 1;
 
     &:hover {
-    bottom: 5px;
+      bottom: 5px;
     }
   }
 }
