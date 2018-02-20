@@ -63,96 +63,108 @@
         <form class="filter" action="form.php" method="GET">
           <p class="filter__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <fieldset class="filter__fieldset">
-            <legend class="filter__legend filter__legend--radio">Тип</legend>
-            <ul class="filter__input-list filter__input-list--radio">
-              <li class="filter__input-item">
-                <input class="filter__radio" type="radio" name="type" value="interior" id="interior-type" checked>
-                <label class="filter__label" for="interior-type">Аксессуар для интерьера</label>
-              </li>
-              <li class="filter__input-item">
-                <input class="filter__radio" type="radio" name="type" value="toy" id="toy-type">
-                <label class="filter__label" for="toy-type">Детская игрушка</label>
-              </li>
-            </ul>
+            <div class="filter__fieldset-wrapper">
+              <h2 class="filter__legend filter__legend--radio">Тип</h2>
+              <ul class="filter__input-list filter__input-list--radio">
+                <li class="filter__input-item">
+                  <input class="filter__radio" type="radio" name="type" value="interior" id="interior-type" checked>
+                  <label class="filter__label" for="interior-type">Аксессуар для интерьера</label>
+                </li>
+                <li class="filter__input-item">
+                  <input class="filter__radio" type="radio" name="type" value="toy" id="toy-type">
+                  <label class="filter__label" for="toy-type">Детская игрушка</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <fieldset class="filter__fieldset filter__fieldset--checkbox filter__fieldset--hl">
-            <legend class="filter__legend filter__legend--checkbox">Цвет</legend>
-            <ul class="filter__input-list filter__input-list--checkbox">
-              <li class="filter__input-item">
-                <input class="filter__checkbox" type="checkbox" name="w-clr" id="white-color" checked>
-                <label class="filter__label" for="white-color">Белый</label>
-              </li>
-              <li class="filter__input-item">
-                <input class="filter__checkbox" type="checkbox" name="g-clr" id="grey-color" checked>
-                <label class="filter__label" for="grey-color">Серый</label>
-              </li>
-              <li class="filter__input-item">
-                <input class="filter__checkbox" type="checkbox" name="tiff-clr" id="tiffany-color">
-                <label class="filter__label" for="tiffany-color">«Тиффани»</label>
-              </li>
-              <li class="filter__input-item">
-                <input class="filter__checkbox" type="checkbox" name="bl-clr" id="black-color">
-                <label class="filter__label" for="black-color">Черный</label>
-              </li>
-              <li class="filter__input-item">
-                <input class="filter__checkbox" type="checkbox" name="pnk-clr" id="pink-color">
-                <label class="filter__label" for="pink-color">Розовый</label>
-              </li>
-              <li class="filter__input-item">
-                <input class="filter__checkbox" type="checkbox" name="or-clr" id="orange-color">
-                <label class="filter__label" for="orange-color">Оранжевый</label>
-              </li>
-            </ul>
+            <div class="filter__fieldset-wrapper">
+              <h2 class="filter__legend filter__legend--checkbox">Цвет</h2>
+              <ul class="filter__input-list filter__input-list--checkbox">
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="checkbox" name="w-clr" id="white-color" checked>
+                  <label class="filter__label" for="white-color">Белый</label>
+                </li>
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="checkbox" name="g-clr" id="grey-color" checked>
+                  <label class="filter__label" for="grey-color">Серый</label>
+                </li>
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="checkbox" name="tiff-clr" id="tiffany-color">
+                  <label class="filter__label" for="tiffany-color">«Тиффани»</label>
+                </li>
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="checkbox" name="bl-clr" id="black-color">
+                  <label class="filter__label" for="black-color">Черный</label>
+                </li>
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="checkbox" name="pnk-clr" id="pink-color">
+                  <label class="filter__label" for="pink-color">Розовый</label>
+                </li>
+                <li class="filter__input-item">
+                  <input class="filter__checkbox" type="checkbox" name="or-clr" id="orange-color">
+                  <label class="filter__label" for="orange-color">Оранжевый</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <fieldset class="filter__fieldset filter__fieldset--textfield">
-            <legend class="filter__legend filter__legend--textfield">ФИО</legend>
-            <ul class="filter__input-list filter__input-list--textfield">
-              <li class="filter__input-item filter__input-item--textfield">
-                <label class="filter__label filter__label--textfield" for="write-name">Имя:</label>
-                <input class="filter__field filter__field--textfield" type="text" name="name" id="write-name" placeholder="Введите ваше имя*" required>
-              </li>
-              <li class="filter__input-item filter__input-item--textfield">
-                <label class="filter__label filter__label--textfield" for="write-last-name">Фамилия:</label>
-                <input class="filter__field filter__field--textfield" type="text" name="last-name" id="write-last-name" placeholder="Укажите фамилию*" required>
-              </li>
-              <li class="filter__input-item filter__input-item--textfield">
-                <label class="filter__label filter__label--textfield" for="write-patronymic">Отчество:</label>
-                <input class="filter__field filter__field--textfield" type="text" name="patronymic" id="write-patronymic" placeholder="Отчество, если желаете">
-              </li>
-            </ul>
+            <div class="filter__fieldset-wrapper">
+              <h2 class="filter__legend filter__legend--textfield">ФИО</h2>
+              <ul class="filter__input-list filter__input-list--textfield">
+                <li class="filter__input-item filter__input-item--textfield">
+                  <label class="filter__label filter__label--textfield" for="write-name">Имя:</label>
+                  <input class="filter__field filter__field--textfield" type="text" name="name" id="write-name" placeholder="Введите ваше имя*" required>
+                </li>
+                <li class="filter__input-item filter__input-item--textfield">
+                  <label class="filter__label filter__label--textfield" for="write-last-name">Фамилия:</label>
+                  <input class="filter__field filter__field--textfield" type="text" name="last-name" id="write-last-name" placeholder="Укажите фамилию*" required>
+                </li>
+                <li class="filter__input-item filter__input-item--textfield">
+                  <label class="filter__label filter__label--textfield" for="write-patronymic">Отчество:</label>
+                  <input class="filter__field filter__field--textfield" type="text" name="patronymic" id="write-patronymic" placeholder="Отчество, если желаете">
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
-          <div class="filter__fieldset-wrapper filter__fieldset-wrapper--hl">
+          <div class="filter__wrapper filter__wrapper--single filter__wrapper--hl">
             <fieldset class="filter__fieldset filter__fieldset--single">
-              <legend class="filter__legend filter__legend--single">Тел</legend>
-              <ul class="filter__input-list filter__input-list--single">
-                <li class="filter__input-item filter__input-item--single">
-                  <input class="filter__field filter__field--single" type="tel" name="phone" id="write-phone" placeholder="+7 XXX XX XX*" required>
-                  <svg class="filter__icon filter__icon--phone" xmlns="http://www.w3.org/2000/svg" width="25" height="24"><path d="M17.321 24.333h-1.115c-4.904-.58-8.497-2.857-11.11-5.772C2.473 15.637.402 11.875 0 6.817V5.459c.091-.921.544-1.55 1.067-2.086.65-.666 1.63-1.522 2.522-1.553.659-.022 1.78.451 2.232 1.066.388.53.595 1.59.775 2.378.185.797.6 1.95.485 2.717-.176 1.196-1.764 1.703-2.231 2.572 1.551 3.721 4.089 6.456 7.472 8.345.847-.465 1.595-1.864 2.767-1.892.428-.012.972.209 1.406.34.477.143.891.326 1.311.484.705.266 1.957.621 2.378 1.213.433.61.681 1.608.581 2.231-.194 1.234-2.227 2.603-3.444 3.059zM12.529 1.528c5.949 0 10.771 4.822 10.771 10.771h1.529C24.829 5.507 19.323 0 12.529 0v1.528z"/><path d="M12.529 9.327v1.552a1.42 1.42 0 0 1 1.421 1.42h1.553a2.973 2.973 0 0 0-2.974-2.972zM12.529 6.246a6.054 6.054 0 0 1 6.056 6.054h1.588a7.642 7.642 0 0 0-7.644-7.641v1.587z"/></svg>
-                </li>
-            </ul>
+              <div class="filter__fieldset-wrapper">
+                <h2 class="filter__legend filter__legend--single">Тел</h2>
+                <ul class="filter__input-list filter__input-list--single">
+                  <li class="filter__input-item filter__input-item--single">
+                    <input class="filter__field filter__field--single" type="tel" name="phone" id="write-phone" placeholder="+7 XXX XX XX*" required>
+                    <svg class="filter__icon filter__icon--phone" xmlns="http://www.w3.org/2000/svg" width="25" height="24"><path d="M17.321 24.333h-1.115c-4.904-.58-8.497-2.857-11.11-5.772C2.473 15.637.402 11.875 0 6.817V5.459c.091-.921.544-1.55 1.067-2.086.65-.666 1.63-1.522 2.522-1.553.659-.022 1.78.451 2.232 1.066.388.53.595 1.59.775 2.378.185.797.6 1.95.485 2.717-.176 1.196-1.764 1.703-2.231 2.572 1.551 3.721 4.089 6.456 7.472 8.345.847-.465 1.595-1.864 2.767-1.892.428-.012.972.209 1.406.34.477.143.891.326 1.311.484.705.266 1.957.621 2.378 1.213.433.61.681 1.608.581 2.231-.194 1.234-2.227 2.603-3.444 3.059zM12.529 1.528c5.949 0 10.771 4.822 10.771 10.771h1.529C24.829 5.507 19.323 0 12.529 0v1.528z"/><path d="M12.529 9.327v1.552a1.42 1.42 0 0 1 1.421 1.42h1.553a2.973 2.973 0 0 0-2.974-2.972zM12.529 6.246a6.054 6.054 0 0 1 6.056 6.054h1.588a7.642 7.642 0 0 0-7.644-7.641v1.587z"/></svg>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
 
             <fieldset class="filter__fieldset filter__fieldset--single">
-              <legend class="filter__legend filter__legend--single">E-mail</legend>
-              <ul class="filter__input-list filter__input-list--single">
-                <li class="filter__input-item filter__input-item--single">
-                  <input class="filter__field filter__field--single" type="email" name="email" id="write-email" placeholder="Ваш Email*" required>
-                  <svg class="filter__icon filter__icon--mail" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M28 5H4a4 4 0 0 0-4 4v13a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4zM2 10.25l6.999 5.25L2 20.75v-10.5zM30 22c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277a3 3 0 0 0 3.599 0l4.369-3.277L30 22zm0-1.25l-7-5.25 7-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4L10.665 15.5l-.833-.625L2 9.001V9c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2l-12.801 9.602z"/></svg>
-                </li>
-              </ul>
+              <div class="filter__fieldset-wrapper">
+                <h2 class="filter__legend filter__legend--single filter__legend--email">E-mail</h2>
+                <ul class="filter__input-list filter__input-list--single">
+                  <li class="filter__input-item filter__input-item--single">
+                    <input class="filter__field filter__field--single" type="email" name="email" id="write-email" placeholder="Ваш Email*" required>
+                    <svg class="filter__icon filter__icon--mail" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M28 5H4a4 4 0 0 0-4 4v13a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4zM2 10.25l6.999 5.25L2 20.75v-10.5zM30 22c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277a3 3 0 0 0 3.599 0l4.369-3.277L30 22zm0-1.25l-7-5.25 7-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4L10.665 15.5l-.833-.625L2 9.001V9c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2l-12.801 9.602z"/></svg>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
           </div>
 
           <fieldset class="filter__fieldset filter__fieldset--textarea">
-            <legend class="filter__legend filter__legend--textarea">Доп</legend>
-            <ul class="filter__input-list filter__input-list--textarea">
-              <li class="filter__input-item filter__input-item--textarea">
-                <textarea class="filter__textarea" name="add-info" id="write-add-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-              </li>
-            </ul>
+            <div class="filter__fieldset-wrapper">
+              <h2 class="filter__legend filter__legend--textarea">Доп</h2>
+              <ul class="filter__input-list filter__input-list--textarea">
+                <li class="filter__input-item filter__input-item--textarea">
+                  <textarea class="filter__textarea" name="add-info" id="write-add-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <div class="filter__btn-note">
             <p class="filter__note">*Поля обязательны для заполнения</p>
@@ -192,7 +204,7 @@
         </div>
       </footer>
     </div>
-  <script src="js/picturefill.min.js"></script>
-  <script src="js/main-nav-toggle.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/main-nav-toggle.js"></script>
   </body>
 </html>
