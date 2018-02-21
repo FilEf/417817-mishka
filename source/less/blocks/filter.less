@@ -441,6 +441,10 @@
   border: none;
   border-bottom: 2px solid @color-black;
 
+  &:focus {
+    border-color: @color-mint;
+  }
+
   &--textfield {
     @media (min-width: @tablet-width) {
       margin-top: -10px;
@@ -486,7 +490,7 @@
   height: 69px;
   margin-bottom: 23px;
 
-  &:hover {
+  &:hover, &:focus {
     .filter__icon {
       fill-opacity: 1;
       fill: @color-mint;
@@ -540,7 +544,7 @@
 
   border-color: @color-black;
 
-  &:hover {
+  &:hover, &:focus {
     border-color: @color-mint;
   }
 
