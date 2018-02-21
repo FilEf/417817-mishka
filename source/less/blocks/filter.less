@@ -118,6 +118,7 @@
 .filter__fieldset-wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
+
     justify-content: flex-start;
     flex-wrap: wrap;
   }
@@ -130,9 +131,9 @@
   line-height: 16px;
 
   display: block;
-  margin: 0;
 
   min-width: 59px;
+  margin: 0;
   padding-right: 23px;
 
   text-transform: uppercase;
@@ -141,11 +142,14 @@
 
   &::before {
     position: absolute;
-    content: "";
-    right: 0;
     top: 7px;
-    height: 1px;
+    right: 0;
+
     width: 199px;
+    height: 1px;
+
+    content: "";
+
     background-color: @color-mint;
   }
 
@@ -155,9 +159,9 @@
 
   @media (min-width: @tablet-width) {
     width: 165px;
+    padding-top: 19px;
     padding-right: 0;
     padding-left: 2px;
-    padding-top: 19px;
 
     &::before {
       display: none;
@@ -181,8 +185,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 0;
     width: 113px;
+    padding-left: 0;
 
     &--checkbox {
       padding-top: 35px;
@@ -223,11 +227,11 @@
     font-size: 19px;
     font-weight: bold;
     line-height: 18px;
-    width: 500px;
 
     display: flex;
     flex-direction: column;
 
+    width: 500px;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
@@ -236,6 +240,7 @@
 
     &--checkbox {
       flex-direction: row;
+
       margin-top: 18px;
 
       justify-content: space-between;
@@ -419,11 +424,6 @@
 
   fill-opacity: 0.3;
 
-  &:hover {
-    fill-opacity: 1;
-    fill: @color-mint;
-  }
-
   @media (min-width: @tablet-width) {
     top: 10px;
     right: 24px;
@@ -440,9 +440,16 @@
 
   border: none;
   border-bottom: 2px solid @color-black;
+  outline: none;
 
+  &:hover,
   &:focus {
     border-color: @color-mint;
+
+    & ~ .filter__icon {
+      fill-opacity: 1;
+      fill: @color-mint;
+    }
   }
 
   &--textfield {
@@ -490,14 +497,15 @@
   height: 69px;
   margin-bottom: 23px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
+    .filter__field {
+      border-color: @color-mint;
+    }
+
     .filter__icon {
       fill-opacity: 1;
       fill: @color-mint;
-    }
-
-    .filter__field {
-      border-color: @color-mint;
     }
   }
 
@@ -536,21 +544,23 @@
 }
 
 .filter__textarea {
-  width: 245px;
-  height: 126px;
+  width: 242px;
+  height: 124px;
   padding: 0;
   padding-top: 13px;
   padding-left: 14px;
 
-  border-color: @color-black;
+  border: 2px solid @color-black;
+  outline: none;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     border-color: @color-mint;
   }
 
   @media (min-width: @tablet-width) {
     width: 99%;
-    height: 128px;
+    height: 125px;
   }
 }
 
